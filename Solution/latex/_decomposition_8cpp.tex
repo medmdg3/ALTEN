@@ -1,0 +1,193 @@
+\doxysection{Decomposition.\+cpp File Reference}
+\hypertarget{_decomposition_8cpp}{}\label{_decomposition_8cpp}\index{Decomposition.cpp@{Decomposition.cpp}}
+{\ttfamily \#include \"{}Headers/\+My\+\_\+\+Headers.\+hpp\"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_decomposition_8cpp_a11cbb791b9c738c102a2c3cc41db9846}{pb}}(a)~push\+\_\+back(a)
+\item 
+\#define \mbox{\hyperlink{_decomposition_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}(a,  b)~make\+\_\+pair(a,b)
+\item 
+\#define \mbox{\hyperlink{_decomposition_8cpp_a42257a545daf5b7933d6e8f96adc74f2}{F}}~first
+\item 
+\#define \mbox{\hyperlink{_decomposition_8cpp_af933676109efed7ab34cea71d748a517}{S}}~second
+\item 
+\#define \mbox{\hyperlink{_decomposition_8cpp_af40a326b23c68a27cebe60f16634a2cb}{V}}~vector
+\item 
+\#define \mbox{\hyperlink{_decomposition_8cpp_a2c11ce7eb9928967f4863f2ff8e99b58}{sz}}()~size()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef long long \mbox{\hyperlink{_decomposition_8cpp_a649842e78f219114435121a088c1bed2}{ll}}
+\item 
+typedef long double \mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T1 $>$ }\\\mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} \mbox{\hyperlink{_decomposition_8cpp_a428c1e80ca6e615bb8ddc7eb04478f4b}{Insmouthness\+\_\+\+Cost}} (vector$<$ T1 $>$ vals)
+\begin{DoxyCompactList}\small\item\em Customisable. ~\newline
+ Calculate the cost of a transiction from a shape to another one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} \mbox{\hyperlink{_decomposition_8cpp_ac39392e9d427ae7102fcd2f30e157414}{Cost\+\_\+of\+\_\+\+Arc}} (Circle C, \mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} angle1, \mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} angle2)
+\begin{DoxyCompactList}\small\item\em Customisable. ~\newline
+ Calculate the cost of moving along a given shape (here is an arc as example) \end{DoxyCompactList}\item 
+vector$<$ pair$<$ pair$<$ pair$<$ \mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$, \mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$, Circle $>$ $>$ \mbox{\hyperlink{_decomposition_8cpp_a24d5cc07752cc1c973273f6e180f136c}{Solve}} (vector$<$ pair$<$ \mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ $>$ P, \mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} Max\+\_\+tolerance=1, \mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} init\+\_\+angle=0)
+\begin{DoxyCompactList}\small\item\em Finds a set of Arcs that fits a set of points the best. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_decomposition_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} \mbox{\hyperlink{_decomposition_8cpp_a9177739822a74b81319cffcaa95e5aaa}{Max\+\_\+\+Deviation}} =0.\+5
+\item 
+const \mbox{\hyperlink{_decomposition_8cpp_a649842e78f219114435121a088c1bed2}{ll}} \mbox{\hyperlink{_decomposition_8cpp_a1371e9de3ed1bcfde7d223258091c449}{angles\+\_\+decomposition}} =20
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_decomposition_8cpp_a11cbb791b9c738c102a2c3cc41db9846}\label{_decomposition_8cpp_a11cbb791b9c738c102a2c3cc41db9846} 
+\index{Decomposition.cpp@{Decomposition.cpp}!pb@{pb}}
+\index{pb@{pb}!Decomposition.cpp@{Decomposition.cpp}}
+\doxysubsubsection{\texorpdfstring{pb}{pb}}
+{\footnotesize\ttfamily \#define pb(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~push\+\_\+back(a)}
+
+\Hypertarget{_decomposition_8cpp_a8291ecbfbe30404d023453fb198bc06c}\label{_decomposition_8cpp_a8291ecbfbe30404d023453fb198bc06c} 
+\index{Decomposition.cpp@{Decomposition.cpp}!mk@{mk}}
+\index{mk@{mk}!Decomposition.cpp@{Decomposition.cpp}}
+\doxysubsubsection{\texorpdfstring{mk}{mk}}
+{\footnotesize\ttfamily \#define mk(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~make\+\_\+pair(a,b)}
+
+\Hypertarget{_decomposition_8cpp_a42257a545daf5b7933d6e8f96adc74f2}\label{_decomposition_8cpp_a42257a545daf5b7933d6e8f96adc74f2} 
+\index{Decomposition.cpp@{Decomposition.cpp}!F@{F}}
+\index{F@{F}!Decomposition.cpp@{Decomposition.cpp}}
+\doxysubsubsection{\texorpdfstring{F}{F}}
+{\footnotesize\ttfamily \#define F~first}
+
+\Hypertarget{_decomposition_8cpp_af933676109efed7ab34cea71d748a517}\label{_decomposition_8cpp_af933676109efed7ab34cea71d748a517} 
+\index{Decomposition.cpp@{Decomposition.cpp}!S@{S}}
+\index{S@{S}!Decomposition.cpp@{Decomposition.cpp}}
+\doxysubsubsection{\texorpdfstring{S}{S}}
+{\footnotesize\ttfamily \#define S~second}
+
+\Hypertarget{_decomposition_8cpp_af40a326b23c68a27cebe60f16634a2cb}\label{_decomposition_8cpp_af40a326b23c68a27cebe60f16634a2cb} 
+\index{Decomposition.cpp@{Decomposition.cpp}!V@{V}}
+\index{V@{V}!Decomposition.cpp@{Decomposition.cpp}}
+\doxysubsubsection{\texorpdfstring{V}{V}}
+{\footnotesize\ttfamily \#define V~vector}
+
+\Hypertarget{_decomposition_8cpp_a2c11ce7eb9928967f4863f2ff8e99b58}\label{_decomposition_8cpp_a2c11ce7eb9928967f4863f2ff8e99b58} 
+\index{Decomposition.cpp@{Decomposition.cpp}!sz@{sz}}
+\index{sz@{sz}!Decomposition.cpp@{Decomposition.cpp}}
+\doxysubsubsection{\texorpdfstring{sz}{sz}}
+{\footnotesize\ttfamily \#define sz(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~size()}
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{_decomposition_8cpp_a649842e78f219114435121a088c1bed2}\label{_decomposition_8cpp_a649842e78f219114435121a088c1bed2} 
+\index{Decomposition.cpp@{Decomposition.cpp}!ll@{ll}}
+\index{ll@{ll}!Decomposition.cpp@{Decomposition.cpp}}
+\doxysubsubsection{\texorpdfstring{ll}{ll}}
+{\footnotesize\ttfamily typedef long long \mbox{\hyperlink{_decomposition_8cpp_a649842e78f219114435121a088c1bed2}{ll}}}
+
+\Hypertarget{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}\label{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48} 
+\index{Decomposition.cpp@{Decomposition.cpp}!ld@{ld}}
+\index{ld@{ld}!Decomposition.cpp@{Decomposition.cpp}}
+\doxysubsubsection{\texorpdfstring{ld}{ld}}
+{\footnotesize\ttfamily typedef long double \mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_decomposition_8cpp_a428c1e80ca6e615bb8ddc7eb04478f4b}\label{_decomposition_8cpp_a428c1e80ca6e615bb8ddc7eb04478f4b} 
+\index{Decomposition.cpp@{Decomposition.cpp}!Insmouthness\_Cost@{Insmouthness\_Cost}}
+\index{Insmouthness\_Cost@{Insmouthness\_Cost}!Decomposition.cpp@{Decomposition.cpp}}
+\doxysubsubsection{\texorpdfstring{Insmouthness\_Cost()}{Insmouthness\_Cost()}}
+{\footnotesize\ttfamily template$<$typename T1 $>$ \\
+\mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} Insmouthness\+\_\+\+Cost (\begin{DoxyParamCaption}\item[{vector$<$ T1 $>$}]{vals }\end{DoxyParamCaption})}
+
+
+
+Customisable. ~\newline
+ Calculate the cost of a transiction from a shape to another one. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & the type of input \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em vals} & a vector contaning the needed input parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value described above 
+\end{DoxyReturn}
+\Hypertarget{_decomposition_8cpp_ac39392e9d427ae7102fcd2f30e157414}\label{_decomposition_8cpp_ac39392e9d427ae7102fcd2f30e157414} 
+\index{Decomposition.cpp@{Decomposition.cpp}!Cost\_of\_Arc@{Cost\_of\_Arc}}
+\index{Cost\_of\_Arc@{Cost\_of\_Arc}!Decomposition.cpp@{Decomposition.cpp}}
+\doxysubsubsection{\texorpdfstring{Cost\_of\_Arc()}{Cost\_of\_Arc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} Cost\+\_\+of\+\_\+\+Arc (\begin{DoxyParamCaption}\item[{Circle}]{C,  }\item[{\mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}]{angle1,  }\item[{\mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}]{angle2 }\end{DoxyParamCaption})}
+
+
+
+Customisable. ~\newline
+ Calculate the cost of moving along a given shape (here is an arc as example) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em C} & the circle where the arc belong \\
+\hline
+{\em angle1} & describes the start of the arc \\
+\hline
+{\em angle2} & describes the end of the arc \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value described above 
+\end{DoxyReturn}
+\Hypertarget{_decomposition_8cpp_a24d5cc07752cc1c973273f6e180f136c}\label{_decomposition_8cpp_a24d5cc07752cc1c973273f6e180f136c} 
+\index{Decomposition.cpp@{Decomposition.cpp}!Solve@{Solve}}
+\index{Solve@{Solve}!Decomposition.cpp@{Decomposition.cpp}}
+\doxysubsubsection{\texorpdfstring{Solve()}{Solve()}}
+{\footnotesize\ttfamily vector$<$ pair$<$ pair$<$ pair$<$ \mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$, \mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$, Circle $>$ $>$ Solve (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ \mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ $>$}]{P,  }\item[{\mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}]{Max\+\_\+tolerance = {\ttfamily 1},  }\item[{\mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}]{init\+\_\+angle = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Finds a set of Arcs that fits a set of points the best. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & The given set of points \\
+\hline
+{\em Max\+\_\+tolerance} & The max accepted value of a unfitness in any given point \\
+\hline
+{\em init\+\_\+angle} & the starting angle of the first arc \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value described above, the arcs are described as pair the first element contains the coordinates of the starting point and the angle at this point, the second element is the circle described by the arc. Note that the end of an arc is the beggining of the next one. 
+\end{DoxyReturn}
+\Hypertarget{_decomposition_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_decomposition_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{Decomposition.cpp@{Decomposition.cpp}!main@{main}}
+\index{main@{main}!Decomposition.cpp@{Decomposition.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_decomposition_8cpp_a9177739822a74b81319cffcaa95e5aaa}\label{_decomposition_8cpp_a9177739822a74b81319cffcaa95e5aaa} 
+\index{Decomposition.cpp@{Decomposition.cpp}!Max\_Deviation@{Max\_Deviation}}
+\index{Max\_Deviation@{Max\_Deviation}!Decomposition.cpp@{Decomposition.cpp}}
+\doxysubsubsection{\texorpdfstring{Max\_Deviation}{Max\_Deviation}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_decomposition_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} Max\+\_\+\+Deviation =0.\+5}
+
+\Hypertarget{_decomposition_8cpp_a1371e9de3ed1bcfde7d223258091c449}\label{_decomposition_8cpp_a1371e9de3ed1bcfde7d223258091c449} 
+\index{Decomposition.cpp@{Decomposition.cpp}!angles\_decomposition@{angles\_decomposition}}
+\index{angles\_decomposition@{angles\_decomposition}!Decomposition.cpp@{Decomposition.cpp}}
+\doxysubsubsection{\texorpdfstring{angles\_decomposition}{angles\_decomposition}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_decomposition_8cpp_a649842e78f219114435121a088c1bed2}{ll}} angles\+\_\+decomposition =20}
+

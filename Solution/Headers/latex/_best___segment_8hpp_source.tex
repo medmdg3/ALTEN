@@ -1,0 +1,31 @@
+\doxysection{Best\+\_\+\+Segment.\+hpp}
+\hypertarget{_best___segment_8hpp_source}{}\label{_best___segment_8hpp_source}\mbox{\hyperlink{_best___segment_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_best___circle_8hpp}{Best\_Circle.hpp}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_best___circle_8cpp}{Best\_Circle.cpp}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ pb(a)\ push\_back(a)}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ mk(a,b)\ make\_pair(a,b)}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ F\ first}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ S\ second}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ V\ vector}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ sz()\ size()}}
+\DoxyCodeLine{00011\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{_best___segment_8hpp_a649842e78f219114435121a088c1bed2}{ll}};}
+\DoxyCodeLine{00012\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{_best___segment_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}};}
+\DoxyCodeLine{00014\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_segment}{Segment}}\{}
+\DoxyCodeLine{00015\ \ \ \ \ pair<ld,ld>\ \mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}}=\mbox{\hyperlink{_best___segment_8hpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}(0,0),\mbox{\hyperlink{struct_segment_a51882904aed5c76336f558ec9573879e}{b}}=\mbox{\hyperlink{_best___segment_8hpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}(0,1);}
+\DoxyCodeLine{00016\ \};}
+\DoxyCodeLine{00021\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___segment_8hpp_a766f2c6616af75b0be9b7395d11a0b2c}{prod\_Scalaire}}(pair<ld,ld>\ A,pair<ld,ld>\ B);}
+\DoxyCodeLine{00026\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___segment_8hpp_a1071f6799a981bce65b9bf2402d7fbd0}{get\_Distance}}(pair<ld,ld>\ \ pt,\ \mbox{\hyperlink{struct_segment}{Segment}}\ s);}
+\DoxyCodeLine{00030\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___segment_8hpp_abff476d0c7124fe8a7d7740c093cc7b6}{get\_angle}}(\mbox{\hyperlink{struct_segment}{Segment}}\ A);}
+\DoxyCodeLine{00034\ pair<ld,ld>\ \mbox{\hyperlink{_best___segment_8hpp_a886fab5e69d6ffe27645d0b743501330}{get\_line}}(\mbox{\hyperlink{struct_segment}{Segment}}\ A);}
+\DoxyCodeLine{00039\ pair<ld,ld>\ \mbox{\hyperlink{_best___segment_8hpp_ab94f7f301f5241445f59024fa10ef692}{Seg\_intersection}}(\mbox{\hyperlink{struct_segment}{Segment}}\ A,\ \mbox{\hyperlink{struct_segment}{Segment}}\ B);}
+\DoxyCodeLine{00046\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___segment_8hpp_ae53c115cf4816ece3bbd881ddf8f42e2}{Angle\_from\_Circle}}(\mbox{\hyperlink{struct_circle}{Circle}}\ C,pair<ld,ld>\ A,pair<ld,ld>\ A1,\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ ang1);}
+\DoxyCodeLine{00052\ \mbox{\hyperlink{struct_circle}{Circle}}\ \mbox{\hyperlink{_best___segment_8hpp_a931c2f76fbecad3f6b005898295a6c36}{Circle\_from\_Angle}}(\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ angle,pair<ld,ld>\ A,pair<ld,ld>\ B);}
+\DoxyCodeLine{00057\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___segment_8hpp_aa3abf941c476d8a81a6455250eb31efb}{Maximum\_Unfitness}}(\mbox{\hyperlink{struct_segment}{Segment}}\ C,vector<pair<ld,ld>\ >\ P);}
+\DoxyCodeLine{00064\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___segment_8hpp_a5fa798c79dbbda384c6703392bf519c6}{Arc\_unfitness}}(\mbox{\hyperlink{struct_circle}{Circle}}\ C,\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ angle1,\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ angle2,vector<pair<ld,ld>\ >\ P);}
+\DoxyCodeLine{00071\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___segment_8hpp_a4dc4d693cee997ddb16d3fe9045b8f10}{Max\_Arc\_unfitness}}(\mbox{\hyperlink{struct_circle}{Circle}}\ C,\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ angle1,\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ angle2,vector<pair<ld,ld>\ >\ P);}
+\DoxyCodeLine{00076\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___segment_8hpp_a061d1291629fb3e360002993672428e3}{Segment\_unfitness}}(\mbox{\hyperlink{struct_segment}{Segment}}\ C,vector<pair<ld,ld>\ >\ P);}
+
+\end{DoxyCode}

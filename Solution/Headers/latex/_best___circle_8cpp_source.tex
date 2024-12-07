@@ -1,0 +1,65 @@
+\doxysection{Best\+\_\+\+Circle.\+cpp}
+\hypertarget{_best___circle_8cpp_source}{}\label{_best___circle_8cpp_source}\mbox{\hyperlink{_best___circle_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_best___circle_8hpp}{Best\_Circle.hpp}}"{}}}
+\DoxyCodeLine{00002\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ pb(a)\ push\_back(a)}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ mk(a,b)\ make\_pair(a,b)}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ F\ first}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ S\ second}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ V\ vector}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ sz()\ size()}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{_best___circle_8cpp_a649842e78f219114435121a088c1bed2}{ll}};}
+\DoxyCodeLine{00010\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___circle_8cpp_a2070c49760ef8c7861b9adfe85540d25}{distance\_square}}(pair<ld,ld>\ P1,pair<ld,ld>\ P2)\{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordflow}{return}\ (P1.F-\/P2.F)*(P1.F-\/P2.F)+(P1.S-\/P2.S)*(P1.S-\/P2.S);}
+\DoxyCodeLine{00014\ \}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___circle_8cpp_a3c168c1ff3d7e7522b4a338d76d5c2f3}{Maximum\_Unfitness}}(\mbox{\hyperlink{struct_circle}{Circle}}\ C,vector<pair<ld,ld>\ >\ P)\{}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ val=0;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\ i:P)\{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ t=sqrt(\mbox{\hyperlink{_best___circle_8cpp_a2070c49760ef8c7861b9adfe85540d25}{distance\_square}}(C.\mbox{\hyperlink{struct_circle_af689cf1daf8ff991f5a10cb6f072ac4f}{O}},i))-\/C.\mbox{\hyperlink{struct_circle_aea391160f6e932bc59cd516970509f59}{r}};}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ val=max(abs(t),val);}
+\DoxyCodeLine{00021\ \ \ \ \ \}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordflow}{return}\ val;}
+\DoxyCodeLine{00023\ \}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___circle_8cpp_a776ecd653097efc13965afea392d69b2}{Circle\_unfitness}}(\mbox{\hyperlink{struct_circle}{Circle}}\ C,vector<pair<ld,ld>\ >\ P)\{}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ val=0;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordflow}{if}(P.size()==0)\textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\ i:P)\{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ t=sqrt(\mbox{\hyperlink{_best___circle_8cpp_a2070c49760ef8c7861b9adfe85540d25}{distance\_square}}(C.\mbox{\hyperlink{struct_circle_af689cf1daf8ff991f5a10cb6f072ac4f}{O}},i))-\/C.\mbox{\hyperlink{struct_circle_aea391160f6e932bc59cd516970509f59}{r}};}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ t*=t;}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ val+=t;}
+\DoxyCodeLine{00032\ \ \ \ \ \}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordflow}{return}\ val/(P.size());}
+\DoxyCodeLine{00034\ \}}
+\DoxyCodeLine{00035\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___circle_8cpp_a891d3c25a8462f916a005a8d09b529b4}{norm}}(pair<ld,ld>\ vect)\{}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordflow}{return}\ sqrt(vect.F*vect.F+vect.S*vect.S);}
+\DoxyCodeLine{00037\ \}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ pair<ld,ld>\ \mbox{\hyperlink{_best___circle_8cpp_aebeaaf406192c8daf3ff5117d365e9b5}{get\_verticle}}(pair<ld,ld>\ P1,pair<ld,ld>\ P2)\{}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ X=P2.F-\/P1.F,Y=P2.S-\/P1.S;}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordflow}{if}(Y==0)\{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_best___circle_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}(0,1);}
+\DoxyCodeLine{00043\ \ \ \ \ \}}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ x1=1,y1=-\/X/Y;}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ temp=\mbox{\hyperlink{_best___circle_8cpp_a891d3c25a8462f916a005a8d09b529b4}{norm}}(\mbox{\hyperlink{_best___circle_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}(x1,y1));}
+\DoxyCodeLine{00046\ \ \ \ \ x1/=temp;}
+\DoxyCodeLine{00047\ \ \ \ \ y1/=temp;}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_best___circle_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}(x1,y1);}
+\DoxyCodeLine{00049\ \}}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ pair<ld,ld>\ \mbox{\hyperlink{_best___circle_8cpp_ad08366d1c9d3bfc55d42d2196e42a440}{best\_center}}(pair<ld,ld>\ P1,pair<ld,ld>\ P2,\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ r,\textcolor{keywordtype}{bool}\ Down)\{}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ t=sqrt(\mbox{\hyperlink{_best___circle_8cpp_a2070c49760ef8c7861b9adfe85540d25}{distance\_square}}(P1,P2))/2;}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordflow}{if}(t>r)\{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ assert(1==0);}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \ \ \ \ pair<ld,ld>\ vert=\mbox{\hyperlink{_best___circle_8cpp_aebeaaf406192c8daf3ff5117d365e9b5}{get\_verticle}}(P1,P2);}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ t1=sqrt(r*r-\/t*t);}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordflow}{if}(Down)t1*=-\/1;}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_best___circle_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}((P1.F+P2.F)/2+vert.F*t1,(P1.S+P2.S)/2+vert.S*t1);}
+\DoxyCodeLine{00060\ \}}
+
+\end{DoxyCode}

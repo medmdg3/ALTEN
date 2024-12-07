@@ -1,0 +1,355 @@
+\doxysection{Best\+\_\+\+Segment.\+cpp File Reference}
+\hypertarget{_best___segment_8cpp}{}\label{_best___segment_8cpp}\index{Best\_Segment.cpp@{Best\_Segment.cpp}}
+{\ttfamily \#include \"{}Best\+\_\+\+Segment.\+hpp\"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_best___segment_8cpp_a11cbb791b9c738c102a2c3cc41db9846}{pb}}(a)~push\+\_\+back(a)
+\item 
+\#define \mbox{\hyperlink{_best___segment_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}(a,  b)~make\+\_\+pair(a,b)
+\item 
+\#define \mbox{\hyperlink{_best___segment_8cpp_a42257a545daf5b7933d6e8f96adc74f2}{F}}~first
+\item 
+\#define \mbox{\hyperlink{_best___segment_8cpp_af933676109efed7ab34cea71d748a517}{S}}~second
+\item 
+\#define \mbox{\hyperlink{_best___segment_8cpp_af40a326b23c68a27cebe60f16634a2cb}{V}}~vector
+\item 
+\#define \mbox{\hyperlink{_best___segment_8cpp_a2c11ce7eb9928967f4863f2ff8e99b58}{sz}}()~size()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef long long \mbox{\hyperlink{_best___segment_8cpp_a649842e78f219114435121a088c1bed2}{ll}}
+\item 
+typedef long double \mbox{\hyperlink{_best___segment_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} \mbox{\hyperlink{_best___segment_8cpp_a766f2c6616af75b0be9b7395d11a0b2c}{prod\+\_\+\+Scalaire}} (pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ A, pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ B)
+\begin{DoxyCompactList}\small\item\em Calculate the scalar product of two given vectors. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} \mbox{\hyperlink{_best___segment_8cpp_a1071f6799a981bce65b9bf2402d7fbd0}{get\+\_\+\+Distance}} (pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ pt, \mbox{\hyperlink{struct_segment}{Segment}} s)
+\begin{DoxyCompactList}\small\item\em Calculate the distance between a given point and a given segment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} \mbox{\hyperlink{_best___segment_8cpp_abff476d0c7124fe8a7d7740c093cc7b6}{get\+\_\+angle}} (\mbox{\hyperlink{struct_segment}{Segment}} A)
+\begin{DoxyCompactList}\small\item\em Calculate the angle of inclinaison of a given segment. \end{DoxyCompactList}\item 
+pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ \mbox{\hyperlink{_best___segment_8cpp_a886fab5e69d6ffe27645d0b743501330}{get\+\_\+line}} (\mbox{\hyperlink{struct_segment}{Segment}} A)
+\begin{DoxyCompactList}\small\item\em Find the pair a and b that correspond to the line equation \"{}\+Y=a\+X+b\"{} in which a given segment is included ( $ a= 10^18 $ in case the line is verticle) \end{DoxyCompactList}\item 
+pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ \mbox{\hyperlink{_best___segment_8cpp_ab94f7f301f5241445f59024fa10ef692}{Seg\+\_\+intersection}} (\mbox{\hyperlink{struct_segment}{Segment}} A, \mbox{\hyperlink{struct_segment}{Segment}} B)
+\begin{DoxyCompactList}\small\item\em Find the coordonates of the intersection of two lines (caracterised by a segment), or return the pair $ (-10^18 ,10^18 ) $ if there isn\textquotesingle{}t exactly one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} \mbox{\hyperlink{_best___segment_8cpp_ae53c115cf4816ece3bbd881ddf8f42e2}{Angle\+\_\+from\+\_\+\+Circle}} (\mbox{\hyperlink{struct_circle}{Circle}} C, pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ A, pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ A1, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} ang1)
+\begin{DoxyCompactList}\small\item\em calculate the angle between the horizontal line and the tangent to a directed circle in a given point \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_circle}{Circle}} \mbox{\hyperlink{_best___segment_8cpp_a931c2f76fbecad3f6b005898295a6c36}{Circle\+\_\+from\+\_\+\+Angle}} (\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} angle, pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ A, pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ B)
+\begin{DoxyCompactList}\small\item\em Find the only circle that went through two given points, such that the the angle between the horizontal line and the tangent that circle in a the first point is defined (segments are approximed with a circle with a big radius \texorpdfstring{$\sim$}{\string~} $ 10^9 $ ) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} \mbox{\hyperlink{_best___segment_8cpp_aa3abf941c476d8a81a6455250eb31efb}{Maximum\+\_\+\+Unfitness}} (\mbox{\hyperlink{struct_segment}{Segment}} C, vector$<$ pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ $>$ P)
+\begin{DoxyCompactList}\small\item\em Find the maximum distance between a given set of points and a given \doxylink{struct_segment}{Segment}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} \mbox{\hyperlink{_best___segment_8cpp_a5fa798c79dbbda384c6703392bf519c6}{Arc\+\_\+unfitness}} (\mbox{\hyperlink{struct_circle}{Circle}} C, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} angle1, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} angle2, vector$<$ pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ $>$ P)
+\begin{DoxyCompactList}\small\item\em Customisable. ~\newline
+ Calculate the unfitness between a given set of points along with and a given arc of a circle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} \mbox{\hyperlink{_best___segment_8cpp_a4dc4d693cee997ddb16d3fe9045b8f10}{Max\+\_\+\+Arc\+\_\+unfitness}} (\mbox{\hyperlink{struct_circle}{Circle}} C, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} angle1, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} angle2, vector$<$ pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ $>$ P)
+\begin{DoxyCompactList}\small\item\em Customisable. ~\newline
+ Calculate the maximum error between a given set of points along with and a given arc of a circle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} \mbox{\hyperlink{_best___segment_8cpp_a061d1291629fb3e360002993672428e3}{Segment\+\_\+unfitness}} (\mbox{\hyperlink{struct_segment}{Segment}} C, vector$<$ pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ $>$ P)
+\begin{DoxyCompactList}\small\item\em Calculate the average distance squared between a given set of points and a given \doxylink{struct_segment}{Segment}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} \mbox{\hyperlink{_best___segment_8cpp_ababf728a22023df18e34e22496a06942}{Pi}} =3.\+1415926535
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_best___segment_8cpp_a11cbb791b9c738c102a2c3cc41db9846}\label{_best___segment_8cpp_a11cbb791b9c738c102a2c3cc41db9846} 
+\index{Best\_Segment.cpp@{Best\_Segment.cpp}!pb@{pb}}
+\index{pb@{pb}!Best\_Segment.cpp@{Best\_Segment.cpp}}
+\doxysubsubsection{\texorpdfstring{pb}{pb}}
+{\footnotesize\ttfamily \#define pb(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~push\+\_\+back(a)}
+
+\Hypertarget{_best___segment_8cpp_a8291ecbfbe30404d023453fb198bc06c}\label{_best___segment_8cpp_a8291ecbfbe30404d023453fb198bc06c} 
+\index{Best\_Segment.cpp@{Best\_Segment.cpp}!mk@{mk}}
+\index{mk@{mk}!Best\_Segment.cpp@{Best\_Segment.cpp}}
+\doxysubsubsection{\texorpdfstring{mk}{mk}}
+{\footnotesize\ttfamily \#define mk(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~make\+\_\+pair(a,b)}
+
+\Hypertarget{_best___segment_8cpp_a42257a545daf5b7933d6e8f96adc74f2}\label{_best___segment_8cpp_a42257a545daf5b7933d6e8f96adc74f2} 
+\index{Best\_Segment.cpp@{Best\_Segment.cpp}!F@{F}}
+\index{F@{F}!Best\_Segment.cpp@{Best\_Segment.cpp}}
+\doxysubsubsection{\texorpdfstring{F}{F}}
+{\footnotesize\ttfamily \#define F~first}
+
+\Hypertarget{_best___segment_8cpp_af933676109efed7ab34cea71d748a517}\label{_best___segment_8cpp_af933676109efed7ab34cea71d748a517} 
+\index{Best\_Segment.cpp@{Best\_Segment.cpp}!S@{S}}
+\index{S@{S}!Best\_Segment.cpp@{Best\_Segment.cpp}}
+\doxysubsubsection{\texorpdfstring{S}{S}}
+{\footnotesize\ttfamily \#define S~second}
+
+\Hypertarget{_best___segment_8cpp_af40a326b23c68a27cebe60f16634a2cb}\label{_best___segment_8cpp_af40a326b23c68a27cebe60f16634a2cb} 
+\index{Best\_Segment.cpp@{Best\_Segment.cpp}!V@{V}}
+\index{V@{V}!Best\_Segment.cpp@{Best\_Segment.cpp}}
+\doxysubsubsection{\texorpdfstring{V}{V}}
+{\footnotesize\ttfamily \#define V~vector}
+
+\Hypertarget{_best___segment_8cpp_a2c11ce7eb9928967f4863f2ff8e99b58}\label{_best___segment_8cpp_a2c11ce7eb9928967f4863f2ff8e99b58} 
+\index{Best\_Segment.cpp@{Best\_Segment.cpp}!sz@{sz}}
+\index{sz@{sz}!Best\_Segment.cpp@{Best\_Segment.cpp}}
+\doxysubsubsection{\texorpdfstring{sz}{sz}}
+{\footnotesize\ttfamily \#define sz(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~size()}
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{_best___segment_8cpp_a649842e78f219114435121a088c1bed2}\label{_best___segment_8cpp_a649842e78f219114435121a088c1bed2} 
+\index{Best\_Segment.cpp@{Best\_Segment.cpp}!ll@{ll}}
+\index{ll@{ll}!Best\_Segment.cpp@{Best\_Segment.cpp}}
+\doxysubsubsection{\texorpdfstring{ll}{ll}}
+{\footnotesize\ttfamily typedef long long \mbox{\hyperlink{_best___circle_8cpp_a649842e78f219114435121a088c1bed2}{ll}}}
+
+\Hypertarget{_best___segment_8cpp_a09bfe86a130ac3370740e01ab26b8b48}\label{_best___segment_8cpp_a09bfe86a130ac3370740e01ab26b8b48} 
+\index{Best\_Segment.cpp@{Best\_Segment.cpp}!ld@{ld}}
+\index{ld@{ld}!Best\_Segment.cpp@{Best\_Segment.cpp}}
+\doxysubsubsection{\texorpdfstring{ld}{ld}}
+{\footnotesize\ttfamily typedef long double \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_best___segment_8cpp_a766f2c6616af75b0be9b7395d11a0b2c}\label{_best___segment_8cpp_a766f2c6616af75b0be9b7395d11a0b2c} 
+\index{Best\_Segment.cpp@{Best\_Segment.cpp}!prod\_Scalaire@{prod\_Scalaire}}
+\index{prod\_Scalaire@{prod\_Scalaire}!Best\_Segment.cpp@{Best\_Segment.cpp}}
+\doxysubsubsection{\texorpdfstring{prod\_Scalaire()}{prod\_Scalaire()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} prod\+\_\+\+Scalaire (\begin{DoxyParamCaption}\item[{pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$}]{A,  }\item[{pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$}]{B }\end{DoxyParamCaption})}
+
+
+
+Calculate the scalar product of two given vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & the first given vector \\
+\hline
+{\em B} & the second given vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the calculated value 
+\end{DoxyReturn}
+\Hypertarget{_best___segment_8cpp_a1071f6799a981bce65b9bf2402d7fbd0}\label{_best___segment_8cpp_a1071f6799a981bce65b9bf2402d7fbd0} 
+\index{Best\_Segment.cpp@{Best\_Segment.cpp}!get\_Distance@{get\_Distance}}
+\index{get\_Distance@{get\_Distance}!Best\_Segment.cpp@{Best\_Segment.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_Distance()}{get\_Distance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} get\+\_\+\+Distance (\begin{DoxyParamCaption}\item[{pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$}]{pt,  }\item[{\mbox{\hyperlink{struct_segment}{Segment}}}]{s }\end{DoxyParamCaption})}
+
+
+
+Calculate the distance between a given point and a given segment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & the given point \\
+\hline
+{\em s} & the given segment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value described above 
+\end{DoxyReturn}
+\Hypertarget{_best___segment_8cpp_abff476d0c7124fe8a7d7740c093cc7b6}\label{_best___segment_8cpp_abff476d0c7124fe8a7d7740c093cc7b6} 
+\index{Best\_Segment.cpp@{Best\_Segment.cpp}!get\_angle@{get\_angle}}
+\index{get\_angle@{get\_angle}!Best\_Segment.cpp@{Best\_Segment.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_angle()}{get\_angle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} get\+\_\+angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_segment}{Segment}}}]{A }\end{DoxyParamCaption})}
+
+
+
+Calculate the angle of inclinaison of a given segment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & the given segment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the calculated value 
+\end{DoxyReturn}
+\Hypertarget{_best___segment_8cpp_a886fab5e69d6ffe27645d0b743501330}\label{_best___segment_8cpp_a886fab5e69d6ffe27645d0b743501330} 
+\index{Best\_Segment.cpp@{Best\_Segment.cpp}!get\_line@{get\_line}}
+\index{get\_line@{get\_line}!Best\_Segment.cpp@{Best\_Segment.cpp}}
+\doxysubsubsection{\texorpdfstring{get\_line()}{get\_line()}}
+{\footnotesize\ttfamily pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ get\+\_\+line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_segment}{Segment}}}]{A }\end{DoxyParamCaption})}
+
+
+
+Find the pair a and b that correspond to the line equation \"{}\+Y=a\+X+b\"{} in which a given segment is included ( $ a= 10^18 $ in case the line is verticle) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & the given segment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The pair described above 
+\end{DoxyReturn}
+\Hypertarget{_best___segment_8cpp_ab94f7f301f5241445f59024fa10ef692}\label{_best___segment_8cpp_ab94f7f301f5241445f59024fa10ef692} 
+\index{Best\_Segment.cpp@{Best\_Segment.cpp}!Seg\_intersection@{Seg\_intersection}}
+\index{Seg\_intersection@{Seg\_intersection}!Best\_Segment.cpp@{Best\_Segment.cpp}}
+\doxysubsubsection{\texorpdfstring{Seg\_intersection()}{Seg\_intersection()}}
+{\footnotesize\ttfamily pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ Seg\+\_\+intersection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_segment}{Segment}}}]{A,  }\item[{\mbox{\hyperlink{struct_segment}{Segment}}}]{B }\end{DoxyParamCaption})}
+
+
+
+Find the coordonates of the intersection of two lines (caracterised by a segment), or return the pair $ (-10^18 ,10^18 ) $ if there isn\textquotesingle{}t exactly one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & the segment caracterising the first line \\
+\hline
+{\em B} & the segment caracterising the second line \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the pair described above 
+\end{DoxyReturn}
+\Hypertarget{_best___segment_8cpp_ae53c115cf4816ece3bbd881ddf8f42e2}\label{_best___segment_8cpp_ae53c115cf4816ece3bbd881ddf8f42e2} 
+\index{Best\_Segment.cpp@{Best\_Segment.cpp}!Angle\_from\_Circle@{Angle\_from\_Circle}}
+\index{Angle\_from\_Circle@{Angle\_from\_Circle}!Best\_Segment.cpp@{Best\_Segment.cpp}}
+\doxysubsubsection{\texorpdfstring{Angle\_from\_Circle()}{Angle\_from\_Circle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} Angle\+\_\+from\+\_\+\+Circle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_circle}{Circle}}}]{C,  }\item[{pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$}]{A,  }\item[{pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$}]{A1,  }\item[{\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}]{ang1 }\end{DoxyParamCaption})}
+
+
+
+calculate the angle between the horizontal line and the tangent to a directed circle in a given point 
+
+
+\begin{DoxyParams}{Parameters}
+{\em C} & The circle described above \\
+\hline
+{\em A} & the given point \\
+\hline
+{\em A1} & A point where the angle is well know \\
+\hline
+{\em ang1} & the value of the angle in this point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value described above 
+\end{DoxyReturn}
+\Hypertarget{_best___segment_8cpp_a931c2f76fbecad3f6b005898295a6c36}\label{_best___segment_8cpp_a931c2f76fbecad3f6b005898295a6c36} 
+\index{Best\_Segment.cpp@{Best\_Segment.cpp}!Circle\_from\_Angle@{Circle\_from\_Angle}}
+\index{Circle\_from\_Angle@{Circle\_from\_Angle}!Best\_Segment.cpp@{Best\_Segment.cpp}}
+\doxysubsubsection{\texorpdfstring{Circle\_from\_Angle()}{Circle\_from\_Angle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_circle}{Circle}} Circle\+\_\+from\+\_\+\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}]{angle,  }\item[{pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$}]{A,  }\item[{pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$}]{B }\end{DoxyParamCaption})}
+
+
+
+Find the only circle that went through two given points, such that the the angle between the horizontal line and the tangent that circle in a the first point is defined (segments are approximed with a circle with a big radius \texorpdfstring{$\sim$}{\string~} $ 10^9 $ ) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & the given angle \\
+\hline
+{\em A} & the first point \\
+\hline
+{\em B} & the second point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the circle described above 
+\end{DoxyReturn}
+\Hypertarget{_best___segment_8cpp_aa3abf941c476d8a81a6455250eb31efb}\label{_best___segment_8cpp_aa3abf941c476d8a81a6455250eb31efb} 
+\index{Best\_Segment.cpp@{Best\_Segment.cpp}!Maximum\_Unfitness@{Maximum\_Unfitness}}
+\index{Maximum\_Unfitness@{Maximum\_Unfitness}!Best\_Segment.cpp@{Best\_Segment.cpp}}
+\doxysubsubsection{\texorpdfstring{Maximum\_Unfitness()}{Maximum\_Unfitness()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} Maximum\+\_\+\+Unfitness (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_segment}{Segment}}}]{C,  }\item[{vector$<$ pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ $>$}]{P }\end{DoxyParamCaption})}
+
+
+
+Find the maximum distance between a given set of points and a given \doxylink{struct_segment}{Segment}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em C} & The given \doxylink{struct_segment}{Segment} \\
+\hline
+{\em P} & the given set of points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value described above 
+\end{DoxyReturn}
+\Hypertarget{_best___segment_8cpp_a5fa798c79dbbda384c6703392bf519c6}\label{_best___segment_8cpp_a5fa798c79dbbda384c6703392bf519c6} 
+\index{Best\_Segment.cpp@{Best\_Segment.cpp}!Arc\_unfitness@{Arc\_unfitness}}
+\index{Arc\_unfitness@{Arc\_unfitness}!Best\_Segment.cpp@{Best\_Segment.cpp}}
+\doxysubsubsection{\texorpdfstring{Arc\_unfitness()}{Arc\_unfitness()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} Arc\+\_\+unfitness (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_circle}{Circle}}}]{C,  }\item[{\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}]{angle1,  }\item[{\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}]{angle2,  }\item[{vector$<$ pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ $>$}]{P }\end{DoxyParamCaption})}
+
+
+
+Customisable. ~\newline
+ Calculate the unfitness between a given set of points along with and a given arc of a circle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em C} & the given circle \\
+\hline
+{\em angle1} & the angle describing the start of the arc \\
+\hline
+{\em angle2} & the angle describing the end of the arc \\
+\hline
+{\em P} & the given set of points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value described above 
+\end{DoxyReturn}
+\Hypertarget{_best___segment_8cpp_a4dc4d693cee997ddb16d3fe9045b8f10}\label{_best___segment_8cpp_a4dc4d693cee997ddb16d3fe9045b8f10} 
+\index{Best\_Segment.cpp@{Best\_Segment.cpp}!Max\_Arc\_unfitness@{Max\_Arc\_unfitness}}
+\index{Max\_Arc\_unfitness@{Max\_Arc\_unfitness}!Best\_Segment.cpp@{Best\_Segment.cpp}}
+\doxysubsubsection{\texorpdfstring{Max\_Arc\_unfitness()}{Max\_Arc\_unfitness()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} Max\+\_\+\+Arc\+\_\+unfitness (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_circle}{Circle}}}]{C,  }\item[{\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}]{angle1,  }\item[{\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}]{angle2,  }\item[{vector$<$ pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ $>$}]{P }\end{DoxyParamCaption})}
+
+
+
+Customisable. ~\newline
+ Calculate the maximum error between a given set of points along with and a given arc of a circle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em C} & the given circle \\
+\hline
+{\em angle1} & the angle describing the start of the arc \\
+\hline
+{\em angle2} & the angle describing the end of the arc \\
+\hline
+{\em P} & the given set of points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value described above 
+\end{DoxyReturn}
+\Hypertarget{_best___segment_8cpp_a061d1291629fb3e360002993672428e3}\label{_best___segment_8cpp_a061d1291629fb3e360002993672428e3} 
+\index{Best\_Segment.cpp@{Best\_Segment.cpp}!Segment\_unfitness@{Segment\_unfitness}}
+\index{Segment\_unfitness@{Segment\_unfitness}!Best\_Segment.cpp@{Best\_Segment.cpp}}
+\doxysubsubsection{\texorpdfstring{Segment\_unfitness()}{Segment\_unfitness()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} Segment\+\_\+unfitness (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_segment}{Segment}}}]{C,  }\item[{vector$<$ pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ $>$}]{P }\end{DoxyParamCaption})}
+
+
+
+Calculate the average distance squared between a given set of points and a given \doxylink{struct_segment}{Segment}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em C} & the given circle \\
+\hline
+{\em P} & the given set of points \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value described above 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_best___segment_8cpp_ababf728a22023df18e34e22496a06942}\label{_best___segment_8cpp_ababf728a22023df18e34e22496a06942} 
+\index{Best\_Segment.cpp@{Best\_Segment.cpp}!Pi@{Pi}}
+\index{Pi@{Pi}!Best\_Segment.cpp@{Best\_Segment.cpp}}
+\doxysubsubsection{\texorpdfstring{Pi}{Pi}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} Pi =3.\+1415926535}
+

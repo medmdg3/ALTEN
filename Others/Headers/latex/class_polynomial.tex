@@ -1,0 +1,158 @@
+\doxysection{Polynomial Class Reference}
+\hypertarget{class_polynomial}{}\label{class_polynomial}\index{Polynomial@{Polynomial}}
+
+
+Helps manipulate Polynomials; it uses a vector of long double to represent each of them.  
+
+
+
+
+{\ttfamily \#include $<$My\+Polynom.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_my_polynom_8hpp_a649842e78f219114435121a088c1bed2}{ll}} \mbox{\hyperlink{class_polynomial_a39f47ddd7cb46d3c928998997f2d8665}{get\+\_\+degree}} ()
+\begin{DoxyCompactList}\small\item\em Allows reading the degree of a \doxylink{class_polynomial}{Polynomial}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_my_polynom_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} \mbox{\hyperlink{class_polynomial_a7c80c1c3e0089d834028db7cabd2c259}{get\+\_\+coef}} (\mbox{\hyperlink{_my_polynom_8hpp_a649842e78f219114435121a088c1bed2}{ll}} ind)
+\begin{DoxyCompactList}\small\item\em Allows reading a coefficient in the \doxylink{class_polynomial}{Polynomial}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_polynomial_a2373dcce5c06a20d07442baab3b54a80}{set\+\_\+coef}} (\mbox{\hyperlink{_my_polynom_8hpp_a649842e78f219114435121a088c1bed2}{ll}} ind, \mbox{\hyperlink{_my_polynom_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} val)
+\begin{DoxyCompactList}\small\item\em Allows changing the value of a coefficient. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_polynomial_adcf6d2d329e07b0ee1f7c1ee64f88458}{add\+\_\+coef}} (\mbox{\hyperlink{_my_polynom_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} val)
+\begin{DoxyCompactList}\small\item\em Allows extending the \doxylink{class_polynomial}{Polynomial} by one index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_my_polynom_8hpp_a649842e78f219114435121a088c1bed2}{ll}} \mbox{\hyperlink{class_polynomial_acc79d0b8acc2516e6c60b2f6bec4ecb0}{del\+\_\+coef}} ()
+\begin{DoxyCompactList}\small\item\em Allows removing the last coefficient of a \doxylink{class_polynomial}{Polynomial}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_polynomial_a634dada035e6113957612e9e35f809d3}{set\+\_\+\+Polynomial}} (vector$<$ \mbox{\hyperlink{_my_polynom_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ new\+\_\+\+Polynomial)
+\begin{DoxyCompactList}\small\item\em Allows replacing the existing \doxylink{class_polynomial}{Polynomial}. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{_my_polynom_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ \mbox{\hyperlink{class_polynomial_aacf4f53b509d6b62ce74e95d56ede135}{get\+\_\+\+Polynomial}} ()
+\begin{DoxyCompactList}\small\item\em Allows reading all the coefficients of a \doxylink{class_polynomial}{Polynomial}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{_my_polynom_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ \mbox{\hyperlink{class_polynomial_ae717b9bb3ddbc07b997d5781224bd949}{coef}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Helps manipulate Polynomials; it uses a vector of long double to represent each of them. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_polynomial_a39f47ddd7cb46d3c928998997f2d8665}\label{class_polynomial_a39f47ddd7cb46d3c928998997f2d8665} 
+\index{Polynomial@{Polynomial}!get\_degree@{get\_degree}}
+\index{get\_degree@{get\_degree}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{get\_degree()}{get\_degree()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_my_polynom_8hpp_a649842e78f219114435121a088c1bed2}{ll}} Polynomial\+::get\+\_\+degree (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allows reading the degree of a \doxylink{class_polynomial}{Polynomial}. 
+
+\begin{DoxyReturn}{Returns}
+The degree of the \doxylink{class_polynomial}{Polynomial}. 
+\end{DoxyReturn}
+\Hypertarget{class_polynomial_a7c80c1c3e0089d834028db7cabd2c259}\label{class_polynomial_a7c80c1c3e0089d834028db7cabd2c259} 
+\index{Polynomial@{Polynomial}!get\_coef@{get\_coef}}
+\index{get\_coef@{get\_coef}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{get\_coef()}{get\_coef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_my_polynom_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} Polynomial\+::get\+\_\+coef (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_my_polynom_8hpp_a649842e78f219114435121a088c1bed2}{ll}}}]{ind }\end{DoxyParamCaption})}
+
+
+
+Allows reading a coefficient in the \doxylink{class_polynomial}{Polynomial}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ind} & The index of the coefficient $a_i$ corresponding to $X^i$. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coefficient $a_{ind}$. 
+\end{DoxyReturn}
+\Hypertarget{class_polynomial_a2373dcce5c06a20d07442baab3b54a80}\label{class_polynomial_a2373dcce5c06a20d07442baab3b54a80} 
+\index{Polynomial@{Polynomial}!set\_coef@{set\_coef}}
+\index{set\_coef@{set\_coef}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{set\_coef()}{set\_coef()}}
+{\footnotesize\ttfamily void Polynomial\+::set\+\_\+coef (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_my_polynom_8hpp_a649842e78f219114435121a088c1bed2}{ll}}}]{ind,  }\item[{\mbox{\hyperlink{_my_polynom_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}]{val }\end{DoxyParamCaption})}
+
+
+
+Allows changing the value of a coefficient. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ind} & The index of the coefficient to change. \\
+\hline
+{\em val} & The new value. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_polynomial_adcf6d2d329e07b0ee1f7c1ee64f88458}\label{class_polynomial_adcf6d2d329e07b0ee1f7c1ee64f88458} 
+\index{Polynomial@{Polynomial}!add\_coef@{add\_coef}}
+\index{add\_coef@{add\_coef}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{add\_coef()}{add\_coef()}}
+{\footnotesize\ttfamily void Polynomial\+::add\+\_\+coef (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_my_polynom_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}]{val }\end{DoxyParamCaption})}
+
+
+
+Allows extending the \doxylink{class_polynomial}{Polynomial} by one index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & The value of the coefficient to be added. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_polynomial_acc79d0b8acc2516e6c60b2f6bec4ecb0}\label{class_polynomial_acc79d0b8acc2516e6c60b2f6bec4ecb0} 
+\index{Polynomial@{Polynomial}!del\_coef@{del\_coef}}
+\index{del\_coef@{del\_coef}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{del\_coef()}{del\_coef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_my_polynom_8hpp_a649842e78f219114435121a088c1bed2}{ll}} Polynomial\+::del\+\_\+coef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allows removing the last coefficient of a \doxylink{class_polynomial}{Polynomial}. 
+
+\begin{DoxyReturn}{Returns}
+-\/1 if the \doxylink{class_polynomial}{Polynomial} is null; otherwise, it returns 0. 
+\end{DoxyReturn}
+\Hypertarget{class_polynomial_a634dada035e6113957612e9e35f809d3}\label{class_polynomial_a634dada035e6113957612e9e35f809d3} 
+\index{Polynomial@{Polynomial}!set\_Polynomial@{set\_Polynomial}}
+\index{set\_Polynomial@{set\_Polynomial}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{set\_Polynomial()}{set\_Polynomial()}}
+{\footnotesize\ttfamily void Polynomial\+::set\+\_\+\+Polynomial (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{_my_polynom_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$}]{new\+\_\+\+Polynomial }\end{DoxyParamCaption})}
+
+
+
+Allows replacing the existing \doxylink{class_polynomial}{Polynomial}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+\+Polynomial} & A vector containing the coefficients of the new \doxylink{class_polynomial}{Polynomial}, where $new_Polynomial[i]$ corresponds to $X^i$. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_polynomial_aacf4f53b509d6b62ce74e95d56ede135}\label{class_polynomial_aacf4f53b509d6b62ce74e95d56ede135} 
+\index{Polynomial@{Polynomial}!get\_Polynomial@{get\_Polynomial}}
+\index{get\_Polynomial@{get\_Polynomial}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{get\_Polynomial()}{get\_Polynomial()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{_my_polynom_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ Polynomial\+::get\+\_\+\+Polynomial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allows reading all the coefficients of a \doxylink{class_polynomial}{Polynomial}. 
+
+\begin{DoxyReturn}{Returns}
+A vector containing all the coefficients, where the value at index $[i]$ corresponds to $X^i$. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_polynomial_ae717b9bb3ddbc07b997d5781224bd949}\label{class_polynomial_ae717b9bb3ddbc07b997d5781224bd949} 
+\index{Polynomial@{Polynomial}!coef@{coef}}
+\index{coef@{coef}!Polynomial@{Polynomial}}
+\doxysubsubsection{\texorpdfstring{coef}{coef}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{_my_polynom_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}$>$ Polynomial\+::coef\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_my_polynom_8hpp}{My\+Polynom.\+hpp}}\item 
+\mbox{\hyperlink{_my_polynom_8cpp}{My\+Polynom.\+cpp}}\end{DoxyCompactItemize}

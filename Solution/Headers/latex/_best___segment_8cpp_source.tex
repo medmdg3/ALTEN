@@ -1,0 +1,180 @@
+\doxysection{Best\+\_\+\+Segment.\+cpp}
+\hypertarget{_best___segment_8cpp_source}{}\label{_best___segment_8cpp_source}\mbox{\hyperlink{_best___segment_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_best___segment_8hpp}{Best\_Segment.hpp}}"{}}}
+\DoxyCodeLine{00002\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ pb(a)\ push\_back(a)}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ mk(a,b)\ make\_pair(a,b)}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ F\ first}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ S\ second}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ V\ vector}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ sz()\ size()}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{_best___segment_8cpp_a649842e78f219114435121a088c1bed2}{ll}};}
+\DoxyCodeLine{00010\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{_best___segment_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{const}\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___segment_8cpp_ababf728a22023df18e34e22496a06942}{Pi}}=3.1415926535;}
+\DoxyCodeLine{00013\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___segment_8cpp_a766f2c6616af75b0be9b7395d11a0b2c}{prod\_Scalaire}}(pair<ld,ld>\ A,pair<ld,ld>\ B)\{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordflow}{return}\ A.F*B.F+A.S*B.S;}
+\DoxyCodeLine{00015\ \}}
+\DoxyCodeLine{00016\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___segment_8cpp_a1071f6799a981bce65b9bf2402d7fbd0}{get\_Distance}}(pair<ld,ld>\ \ pt,\ \mbox{\hyperlink{struct_segment}{Segment}}\ s)\{}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ t=\mbox{\hyperlink{_best___segment_8cpp_a766f2c6616af75b0be9b7395d11a0b2c}{prod\_Scalaire}}(\mbox{\hyperlink{_best___segment_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}(s.\mbox{\hyperlink{struct_segment_a51882904aed5c76336f558ec9573879e}{b}}.F-\/s.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}}.F,s.\mbox{\hyperlink{struct_segment_a51882904aed5c76336f558ec9573879e}{b}}.S-\/s.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}}.S),\mbox{\hyperlink{_best___segment_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}(pt.F-\/s.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}}.F,pt.S-\/s.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}}.S));}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{_best___circle_8cpp_a2070c49760ef8c7861b9adfe85540d25}{distance\_square}}(s.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}},s.\mbox{\hyperlink{struct_segment_a51882904aed5c76336f558ec9573879e}{b}})==0)\{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ sqrt(\mbox{\hyperlink{_best___circle_8cpp_a2070c49760ef8c7861b9adfe85540d25}{distance\_square}}(pt,s.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}}));}
+\DoxyCodeLine{00020\ \ \ \ \ \}}
+\DoxyCodeLine{00021\ \ \ \ \ t/=sqrt(\mbox{\hyperlink{_best___circle_8cpp_a2070c49760ef8c7861b9adfe85540d25}{distance\_square}}(s.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}},s.\mbox{\hyperlink{struct_segment_a51882904aed5c76336f558ec9573879e}{b}}));}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{_best___circle_8cpp_a2070c49760ef8c7861b9adfe85540d25}{distance\_square}}(pt,s.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}})-\/t*t<=0)\textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordflow}{return}\ sqrt(\mbox{\hyperlink{_best___circle_8cpp_a2070c49760ef8c7861b9adfe85540d25}{distance\_square}}(pt,s.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}})-\/t*t);}
+\DoxyCodeLine{00024\ \}}
+\DoxyCodeLine{00025\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___segment_8cpp_abff476d0c7124fe8a7d7740c093cc7b6}{get\_angle}}(\mbox{\hyperlink{struct_segment}{Segment}}\ A)\{}
+\DoxyCodeLine{00026\ \ \ \ \ pair<ld,ld>\ v=\mbox{\hyperlink{_best___segment_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}(A.\mbox{\hyperlink{struct_segment_a51882904aed5c76336f558ec9573879e}{b}}.F-\/A.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}}.F,A.\mbox{\hyperlink{struct_segment_a51882904aed5c76336f558ec9573879e}{b}}.S-\/A.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}}.S);}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ tem=\mbox{\hyperlink{_best___circle_8cpp_a891d3c25a8462f916a005a8d09b529b4}{norm}}(v);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordflow}{if}(tem==0)\textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00029\ \ \ \ \ v=\mbox{\hyperlink{_best___segment_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}(v.F/tem,v.S/tem);}
+\DoxyCodeLine{00030\ \ \ \ \textcolor{keywordflow}{if}(v.F==0)\{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(v.S>0)\textcolor{keywordflow}{return}\ \mbox{\hyperlink{_best___segment_8cpp_ababf728a22023df18e34e22496a06942}{Pi}}/2;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ 3*\mbox{\hyperlink{_best___segment_8cpp_ababf728a22023df18e34e22496a06942}{Pi}}/2;}
+\DoxyCodeLine{00033\ \ \ \ \}}
+\DoxyCodeLine{00034\ \ \ \ tem=v.S/v.F;}
+\DoxyCodeLine{00035\ \ \ \ tem=atan(tem);}
+\DoxyCodeLine{00036\ \ \ \ \textcolor{keywordflow}{if}(tem<0)tem+=2*\mbox{\hyperlink{_best___segment_8cpp_ababf728a22023df18e34e22496a06942}{Pi}};}
+\DoxyCodeLine{00037\ \ \ \ \textcolor{keywordflow}{if}(v.F>0)\textcolor{keywordflow}{return}\ tem;}
+\DoxyCodeLine{00038\ \ \ \ tem+=\mbox{\hyperlink{_best___segment_8cpp_ababf728a22023df18e34e22496a06942}{Pi}};}
+\DoxyCodeLine{00039\ \ \ \ \textcolor{keywordflow}{if}(tem>=2*\mbox{\hyperlink{_best___segment_8cpp_ababf728a22023df18e34e22496a06942}{Pi}})tem-\/=2*\mbox{\hyperlink{_best___segment_8cpp_ababf728a22023df18e34e22496a06942}{Pi}};}
+\DoxyCodeLine{00040\ \ \ \ \textcolor{keywordflow}{return}\ tem;}
+\DoxyCodeLine{00041\ \}}
+\DoxyCodeLine{00042\ pair<ld,ld>\ \mbox{\hyperlink{_best___segment_8cpp_a886fab5e69d6ffe27645d0b743501330}{get\_line}}(\mbox{\hyperlink{struct_segment}{Segment}}\ A)\{}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordflow}{if}(A.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}}.F==A.\mbox{\hyperlink{struct_segment_a51882904aed5c76336f558ec9573879e}{b}}.F)\textcolor{keywordflow}{return}\ \mbox{\hyperlink{_best___segment_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}(A.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}}.F,1e18);}
+\DoxyCodeLine{00044\ \ \ \ \ pair<ld,ld>\ Diff=\mbox{\hyperlink{_best___segment_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}(A.\mbox{\hyperlink{struct_segment_a51882904aed5c76336f558ec9573879e}{b}}.F-\/A.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}}.F,A.\mbox{\hyperlink{struct_segment_a51882904aed5c76336f558ec9573879e}{b}}.S-\/A.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}}.S);}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ a=Diff.S/Diff.F;}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_best___segment_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}(A.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}}.S-\/A.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}}.F*a,a);}
+\DoxyCodeLine{00047\ \}}
+\DoxyCodeLine{00048\ pair<ld,ld>\ \mbox{\hyperlink{_best___segment_8cpp_ab94f7f301f5241445f59024fa10ef692}{Seg\_intersection}}(\mbox{\hyperlink{struct_segment}{Segment}}\ A,\ \mbox{\hyperlink{struct_segment}{Segment}}\ B)\{}
+\DoxyCodeLine{00049\ \ \ \ \ pair<ld,ld>\ t1=\mbox{\hyperlink{_best___segment_8cpp_a886fab5e69d6ffe27645d0b743501330}{get\_line}}(A),t2=\mbox{\hyperlink{_best___segment_8cpp_a886fab5e69d6ffe27645d0b743501330}{get\_line}}(B);}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordflow}{if}(t1.S==1e18)\{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_best___segment_8cpp_ab94f7f301f5241445f59024fa10ef692}{Seg\_intersection}}(B,A);}
+\DoxyCodeLine{00052\ \ \ \ \ \}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordflow}{if}(t2.S==1e18)\{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_best___segment_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}((t2.F-\/t1.F)/t1.S,t2.F);}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordflow}{if}(t1.S==t2.S)\{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_best___segment_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}(-\/1e18,-\/1e18);}
+\DoxyCodeLine{00058\ \ \ \ \ \}}
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ x=(t2.F-\/t1.F)/(t1.S-\/t2.S);}
+\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ y=t1.F+t1.S*x;}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_best___segment_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}(x,y);}
+\DoxyCodeLine{00062\ \}}
+\DoxyCodeLine{00063\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___segment_8cpp_ae53c115cf4816ece3bbd881ddf8f42e2}{Angle\_from\_Circle}}(\mbox{\hyperlink{struct_circle}{Circle}}\ C,pair<ld,ld>\ A,pair<ld,ld>\ A1,\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ ang1)\{}
+\DoxyCodeLine{00064\ \ \ \ \ \mbox{\hyperlink{struct_segment}{Segment}}\ B;}
+\DoxyCodeLine{00065\ \ \ \ \ B.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}}=C.\mbox{\hyperlink{struct_circle_af689cf1daf8ff991f5a10cb6f072ac4f}{O}};}
+\DoxyCodeLine{00066\ \ \ \ \ B.\mbox{\hyperlink{struct_segment_a51882904aed5c76336f558ec9573879e}{b}}=A;}
+\DoxyCodeLine{00067\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ ans=\mbox{\hyperlink{_best___segment_8cpp_abff476d0c7124fe8a7d7740c093cc7b6}{get\_angle}}(B);}
+\DoxyCodeLine{00068\ \ \ \ \ ans+=\mbox{\hyperlink{_best___segment_8cpp_ababf728a22023df18e34e22496a06942}{Pi}}/2;}
+\DoxyCodeLine{00069\ \ \ \ \ B.\mbox{\hyperlink{struct_segment_a51882904aed5c76336f558ec9573879e}{b}}=A1;}
+\DoxyCodeLine{00070\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ temp=\mbox{\hyperlink{_best___segment_8cpp_abff476d0c7124fe8a7d7740c093cc7b6}{get\_angle}}(B);}
+\DoxyCodeLine{00071\ \ \ \ \ temp+=\mbox{\hyperlink{_best___segment_8cpp_ababf728a22023df18e34e22496a06942}{Pi}}/2;}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordflow}{if}(temp>=2*\mbox{\hyperlink{_best___segment_8cpp_ababf728a22023df18e34e22496a06942}{Pi}})temp-\/=2*\mbox{\hyperlink{_best___segment_8cpp_ababf728a22023df18e34e22496a06942}{Pi}};}
+\DoxyCodeLine{00073\ \ \ \ \ ans+=ang1-\/temp;}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordflow}{if}(ans>=2*\mbox{\hyperlink{_best___segment_8cpp_ababf728a22023df18e34e22496a06942}{Pi}})ans-\/=2*\mbox{\hyperlink{_best___segment_8cpp_ababf728a22023df18e34e22496a06942}{Pi}};}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordflow}{return}\ ans;}
+\DoxyCodeLine{00076\ \}}
+\DoxyCodeLine{00077\ \mbox{\hyperlink{struct_circle}{Circle}}\ \mbox{\hyperlink{_best___segment_8cpp_a931c2f76fbecad3f6b005898295a6c36}{Circle\_from\_Angle}}(\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ angle,pair<ld,ld>\ A,pair<ld,ld>\ B)\{}
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{struct_segment}{Segment}}\ A1,A2;}
+\DoxyCodeLine{00079\ \ \ \ \ angle+=\mbox{\hyperlink{_best___segment_8cpp_ababf728a22023df18e34e22496a06942}{Pi}}/2;}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordflow}{if}(angle>2*\mbox{\hyperlink{_best___segment_8cpp_ababf728a22023df18e34e22496a06942}{Pi}})angle-\/=2*\mbox{\hyperlink{_best___segment_8cpp_ababf728a22023df18e34e22496a06942}{Pi}};}
+\DoxyCodeLine{00081\ \ \ \ \ A1.\mbox{\hyperlink{struct_segment_a51882904aed5c76336f558ec9573879e}{b}}=\mbox{\hyperlink{_best___segment_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}(A.F+cos(angle),A.S+sin(angle));}
+\DoxyCodeLine{00082\ \ \ \ \ A1.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}}=A;}
+\DoxyCodeLine{00083\ \ \ \ \ A2.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}}=A;}
+\DoxyCodeLine{00084\ \ \ \ \ A2.\mbox{\hyperlink{struct_segment_a51882904aed5c76336f558ec9573879e}{b}}=B;}
+\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ vv=\mbox{\hyperlink{_best___segment_8cpp_abff476d0c7124fe8a7d7740c093cc7b6}{get\_angle}}(A2);}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordflow}{if}(abs(angle-\/vv)<1e-\/8||abs(abs(angle-\/vv)-\/\mbox{\hyperlink{_best___segment_8cpp_ababf728a22023df18e34e22496a06942}{Pi}})<1e-\/8)\{}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_circle}{Circle}}\ C;}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ C.\mbox{\hyperlink{struct_circle_aea391160f6e932bc59cd516970509f59}{r}}=sqrt(\mbox{\hyperlink{_best___circle_8cpp_a2070c49760ef8c7861b9adfe85540d25}{distance\_square}}(A,B))/2;}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ C.\mbox{\hyperlink{struct_circle_af689cf1daf8ff991f5a10cb6f072ac4f}{O}}=\mbox{\hyperlink{_best___segment_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}((A.F+B.F)/2,(A.S+B.S)/2);}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ C;}
+\DoxyCodeLine{00091\ \ \ \ \ \}}
+\DoxyCodeLine{00092\ \ \ \ \ pair<ld,ld>\ G=\mbox{\hyperlink{_best___circle_8cpp_aebeaaf406192c8daf3ff5117d365e9b5}{get\_verticle}}(A,B);}
+\DoxyCodeLine{00093\ \ \ \ \ A2.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}}=\mbox{\hyperlink{_best___segment_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}((A.F+B.F)/2,(A.S+B.S)/2);}
+\DoxyCodeLine{00094\ \ \ \ \ A2.\mbox{\hyperlink{struct_segment_a51882904aed5c76336f558ec9573879e}{b}}=\mbox{\hyperlink{_best___segment_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}(A2.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}}.F+G.F,A2.\mbox{\hyperlink{struct_segment_a9e0c486ce78734e34a51e79afef11ccf}{a}}.S+G.S);}
+\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{struct_circle}{Circle}}\ C;}
+\DoxyCodeLine{00096\ \ \ \ \ C.\mbox{\hyperlink{struct_circle_af689cf1daf8ff991f5a10cb6f072ac4f}{O}}=\mbox{\hyperlink{_best___segment_8cpp_ab94f7f301f5241445f59024fa10ef692}{Seg\_intersection}}(A1,A2);}
+\DoxyCodeLine{00097\ \ \ \ \ C.\mbox{\hyperlink{struct_circle_aea391160f6e932bc59cd516970509f59}{r}}=sqrt(\mbox{\hyperlink{_best___circle_8cpp_a2070c49760ef8c7861b9adfe85540d25}{distance\_square}}(A,C.\mbox{\hyperlink{struct_circle_af689cf1daf8ff991f5a10cb6f072ac4f}{O}}));}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordflow}{return}\ C;}
+\DoxyCodeLine{00099\ \}}
+\DoxyCodeLine{00100\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___segment_8cpp_aa3abf941c476d8a81a6455250eb31efb}{Maximum\_Unfitness}}(\mbox{\hyperlink{struct_segment}{Segment}}\ C,vector<pair<ld,ld>\ >\ P)\{}
+\DoxyCodeLine{00101\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ val=0;}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\ i:P)\{}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ t=\mbox{\hyperlink{_best___segment_8cpp_a1071f6799a981bce65b9bf2402d7fbd0}{get\_Distance}}(i,C);}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ val=max(abs(t),val);}
+\DoxyCodeLine{00105\ \ \ \ \ \}}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordflow}{return}\ val;}
+\DoxyCodeLine{00107\ \}}
+\DoxyCodeLine{00108\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___segment_8cpp_a5fa798c79dbbda384c6703392bf519c6}{Arc\_unfitness}}(\mbox{\hyperlink{struct_circle}{Circle}}\ C,\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ angle1,\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ angle2,vector<pair<ld,ld>\ >\ P)\{}
+\DoxyCodeLine{00109\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ ans=0;}
+\DoxyCodeLine{00110\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a649842e78f219114435121a088c1bed2}{ll}}\ n=P.size();}
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ k=0;k<2*n-\/1;k++)\{}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ i=k/2;}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ pair<ld,ld>\ temp=P[i];}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(k\%2)\{}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ temp.F=(temp.F+P[i+1].F)/2;}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ temp.S=(temp.S+P[i+1].S)/2;}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ ang=\mbox{\hyperlink{_best___segment_8cpp_ae53c115cf4816ece3bbd881ddf8f42e2}{Angle\_from\_Circle}}(C,temp,P[0],angle1);}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ inclu=\textcolor{keyword}{true};}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(angle1<=angle2)\{}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(ang<angle1||ang>angle2)inclu=\textcolor{keyword}{false};}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(ang<angle1\&\&ang>angle2)inclu=\textcolor{keyword}{false};}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(inclu)\{}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ t=sqrt(\mbox{\hyperlink{_best___circle_8cpp_a2070c49760ef8c7861b9adfe85540d25}{distance\_square}}(C.\mbox{\hyperlink{struct_circle_af689cf1daf8ff991f5a10cb6f072ac4f}{O}},P[i]))-\/C.\mbox{\hyperlink{struct_circle_aea391160f6e932bc59cd516970509f59}{r}};}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ t*=t;}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ ans+=t;}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ t=min(\mbox{\hyperlink{_best___circle_8cpp_a2070c49760ef8c7861b9adfe85540d25}{distance\_square}}(C.\mbox{\hyperlink{struct_circle_af689cf1daf8ff991f5a10cb6f072ac4f}{O}},P[0]),\mbox{\hyperlink{_best___circle_8cpp_a2070c49760ef8c7861b9adfe85540d25}{distance\_square}}(C.\mbox{\hyperlink{struct_circle_af689cf1daf8ff991f5a10cb6f072ac4f}{O}},P.back()));}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ t*=t;}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ ans+=t;}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00134\ \ \ \ \ \}}
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keywordflow}{return}\ ans;}
+\DoxyCodeLine{00136\ \}}
+\DoxyCodeLine{00137\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___segment_8cpp_a4dc4d693cee997ddb16d3fe9045b8f10}{Max\_Arc\_unfitness}}(\mbox{\hyperlink{struct_circle}{Circle}}\ C,\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ angle1,\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ angle2,vector<pair<ld,ld>\ >\ P)\{}
+\DoxyCodeLine{00138\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ ans=0;}
+\DoxyCodeLine{00139\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a649842e78f219114435121a088c1bed2}{ll}}\ n=P.size();}
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ k=0;k<2*n-\/1;k++)\{}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ i=k/2;}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ pair<ld,ld>\ temp=P[i];}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(k\%2)\{}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ temp.F=(temp.F+P[i+1].F)/2;}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ temp.S=(temp.S+P[i+1].S)/2;}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ ang=\mbox{\hyperlink{_best___segment_8cpp_ae53c115cf4816ece3bbd881ddf8f42e2}{Angle\_from\_Circle}}(C,temp,P[0],angle1);}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ inclu=\textcolor{keyword}{true};}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(angle1<=angle2)\{}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(ang<angle1||ang>angle2)inclu=\textcolor{keyword}{false};}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(ang<angle1\&\&ang>angle2)inclu=\textcolor{keyword}{false};}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(inclu)\{}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ t=sqrt(\mbox{\hyperlink{_best___circle_8cpp_a2070c49760ef8c7861b9adfe85540d25}{distance\_square}}(C.\mbox{\hyperlink{struct_circle_af689cf1daf8ff991f5a10cb6f072ac4f}{O}},P[i]))-\/C.\mbox{\hyperlink{struct_circle_aea391160f6e932bc59cd516970509f59}{r}};}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ t=abs(t);}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ ans=max(ans,t);}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ t=min(\mbox{\hyperlink{_best___circle_8cpp_a2070c49760ef8c7861b9adfe85540d25}{distance\_square}}(C.\mbox{\hyperlink{struct_circle_af689cf1daf8ff991f5a10cb6f072ac4f}{O}},P[0]),\mbox{\hyperlink{_best___circle_8cpp_a2070c49760ef8c7861b9adfe85540d25}{distance\_square}}(C.\mbox{\hyperlink{struct_circle_af689cf1daf8ff991f5a10cb6f072ac4f}{O}},P.back()));}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ ans=max(ans,t);}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00162\ \ \ \ \ \}}
+\DoxyCodeLine{00163\ \ \ \ \ \textcolor{keywordflow}{return}\ ans;}
+\DoxyCodeLine{00164\ \}}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00166\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_best___segment_8cpp_a061d1291629fb3e360002993672428e3}{Segment\_unfitness}}(\mbox{\hyperlink{struct_segment}{Segment}}\ C,vector<pair<ld,ld>\ >\ P)\{}
+\DoxyCodeLine{00167\ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ val=0;}
+\DoxyCodeLine{00168\ \ \ \ \ \textcolor{keywordflow}{if}(P.size()==0)\textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00169\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\ i:P)\{}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ t=\mbox{\hyperlink{_best___segment_8cpp_a1071f6799a981bce65b9bf2402d7fbd0}{get\_Distance}}(i,C);}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ t*=t;}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ val+=t;}
+\DoxyCodeLine{00173\ \ \ \ \ \}}
+\DoxyCodeLine{00174\ \ \ \ \ \textcolor{keywordflow}{return}\ val/(P.size());}
+\DoxyCodeLine{00175\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,258 @@
+\doxysection{Matrix Class Reference}
+\hypertarget{class_matrix}{}\label{class_matrix}\index{Matrix@{Matrix}}
+
+
+This class is used to represent a matrix using a vector of vectors of the same size.  
+
+
+
+
+{\ttfamily \#include $<$My\+Matrix.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}} \mbox{\hyperlink{class_matrix_a67692e974ba2a74a986d8dacf5aa32a5}{get\+\_\+nbr\+\_\+lines}} ()
+\begin{DoxyCompactList}\small\item\em Used to read the number of rows in the matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}} \mbox{\hyperlink{class_matrix_ad21d945e74b73cf38698b82a79d491ea}{get\+\_\+nbr\+\_\+columns}} ()
+\begin{DoxyCompactList}\small\item\em Used to read the number of columns in the matrix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matrix_a29ce32fab34bf83395bef459e1c3837c}{init}} (\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}} n, \mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}} p)
+\begin{DoxyCompactList}\small\item\em Initializes the size of the matrix and fills it with zeros. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{_my_matrix_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ \mbox{\hyperlink{class_matrix_af6883ffab463cb63bb0de2621d15c63c}{get\+\_\+line}} (\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}} ind)
+\begin{DoxyCompactList}\small\item\em Obtains a row of the matrix. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{_my_matrix_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ \mbox{\hyperlink{class_matrix_af3c717ba0cf371355f91475d62dcf723}{get\+\_\+column}} (\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}} ind)
+\begin{DoxyCompactList}\small\item\em Obtains a column of the matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_my_matrix_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} \mbox{\hyperlink{class_matrix_accd7cb7ff30a891bd7de2b3e29a8c306}{get\+\_\+value}} (\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}} i, \mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}} j)
+\begin{DoxyCompactList}\small\item\em Reads a value in the matrix. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ \mbox{\hyperlink{_my_matrix_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ $>$ \mbox{\hyperlink{class_matrix_ac5ca35542d6a676b4d8b2201e90269d9}{get\+\_\+\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Reads all the values of the matrix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matrix_a88578669862c95549b0dfed411a6d9a3}{set\+\_\+line}} (\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}} ind, vector$<$ \mbox{\hyperlink{_my_matrix_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ new\+\_\+line)
+\begin{DoxyCompactList}\small\item\em Modifies the values of a row. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matrix_af26674d82c5b294d9f012b51620a4d7f}{set\+\_\+column}} (\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}} ind, vector$<$ \mbox{\hyperlink{_my_matrix_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ new\+\_\+column)
+\begin{DoxyCompactList}\small\item\em Modifies the values of a column. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matrix_a526625b7a4c00aa76d44da6f20b89e8e}{set\+\_\+value}} (\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}} i, \mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}} j, \mbox{\hyperlink{_my_matrix_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} new\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Modifies a value in the matrix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matrix_a4f75e3caf0320e96b466219d6eabd74e}{set\+\_\+\+Matrix}} (vector$<$ vector$<$ \mbox{\hyperlink{_my_matrix_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ $>$ new\+\_\+matrix)
+\begin{DoxyCompactList}\small\item\em Allows modification of the entire matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}} \mbox{\hyperlink{class_matrix_a84e79275b8f979b6865796f4d006ed8e}{nbr\+\_\+lines}} = 0
+\item 
+\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}} \mbox{\hyperlink{class_matrix_aec6c431972a0d5bd50978c8ccaf6db34}{nbr\+\_\+columns}} = 0
+\item 
+vector$<$ vector$<$ \mbox{\hyperlink{_my_matrix_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ $>$ \mbox{\hyperlink{class_matrix_a84d678e45db2d1008d849683546968dc}{Values}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used to represent a matrix using a vector of vectors of the same size. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_matrix_a67692e974ba2a74a986d8dacf5aa32a5}\label{class_matrix_a67692e974ba2a74a986d8dacf5aa32a5} 
+\index{Matrix@{Matrix}!get\_nbr\_lines@{get\_nbr\_lines}}
+\index{get\_nbr\_lines@{get\_nbr\_lines}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{get\_nbr\_lines()}{get\_nbr\_lines()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}} Matrix\+::get\+\_\+nbr\+\_\+lines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Used to read the number of rows in the matrix. 
+
+\begin{DoxyReturn}{Returns}
+The number of rows in the matrix. 
+\end{DoxyReturn}
+\Hypertarget{class_matrix_ad21d945e74b73cf38698b82a79d491ea}\label{class_matrix_ad21d945e74b73cf38698b82a79d491ea} 
+\index{Matrix@{Matrix}!get\_nbr\_columns@{get\_nbr\_columns}}
+\index{get\_nbr\_columns@{get\_nbr\_columns}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{get\_nbr\_columns()}{get\_nbr\_columns()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}} Matrix\+::get\+\_\+nbr\+\_\+columns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Used to read the number of columns in the matrix. 
+
+\begin{DoxyReturn}{Returns}
+The number of columns in the matrix. 
+\end{DoxyReturn}
+\Hypertarget{class_matrix_a29ce32fab34bf83395bef459e1c3837c}\label{class_matrix_a29ce32fab34bf83395bef459e1c3837c} 
+\index{Matrix@{Matrix}!init@{init}}
+\index{init@{init}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Matrix\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}}}]{n,  }\item[{\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}}}]{p }\end{DoxyParamCaption})}
+
+
+
+Initializes the size of the matrix and fills it with zeros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The new number of rows. \\
+\hline
+{\em p} & The new number of columns. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_matrix_af6883ffab463cb63bb0de2621d15c63c}\label{class_matrix_af6883ffab463cb63bb0de2621d15c63c} 
+\index{Matrix@{Matrix}!get\_line@{get\_line}}
+\index{get\_line@{get\_line}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{get\_line()}{get\_line()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{_my_matrix_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ Matrix\+::get\+\_\+line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}}}]{ind }\end{DoxyParamCaption})}
+
+
+
+Obtains a row of the matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ind} & The index of the row. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector containing the elements of the row. 
+\end{DoxyReturn}
+\Hypertarget{class_matrix_af3c717ba0cf371355f91475d62dcf723}\label{class_matrix_af3c717ba0cf371355f91475d62dcf723} 
+\index{Matrix@{Matrix}!get\_column@{get\_column}}
+\index{get\_column@{get\_column}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{get\_column()}{get\_column()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{_my_matrix_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ Matrix\+::get\+\_\+column (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}}}]{ind }\end{DoxyParamCaption})}
+
+
+
+Obtains a column of the matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ind} & The index of the column. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector containing the elements of the column. 
+\end{DoxyReturn}
+\Hypertarget{class_matrix_accd7cb7ff30a891bd7de2b3e29a8c306}\label{class_matrix_accd7cb7ff30a891bd7de2b3e29a8c306} 
+\index{Matrix@{Matrix}!get\_value@{get\_value}}
+\index{get\_value@{get\_value}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{get\_value()}{get\_value()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_my_matrix_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} Matrix\+::get\+\_\+value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}}}]{i,  }\item[{\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}}}]{j }\end{DoxyParamCaption})}
+
+
+
+Reads a value in the matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of the row of the value. \\
+\hline
+{\em j} & The index of the column of the value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value. 
+\end{DoxyReturn}
+\Hypertarget{class_matrix_ac5ca35542d6a676b4d8b2201e90269d9}\label{class_matrix_ac5ca35542d6a676b4d8b2201e90269d9} 
+\index{Matrix@{Matrix}!get\_Matrix@{get\_Matrix}}
+\index{get\_Matrix@{get\_Matrix}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{get\_Matrix()}{get\_Matrix()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ \mbox{\hyperlink{_my_matrix_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ $>$ Matrix\+::get\+\_\+\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads all the values of the matrix. 
+
+\begin{DoxyReturn}{Returns}
+A vector containing all the rows of the matrix. 
+\end{DoxyReturn}
+\Hypertarget{class_matrix_a88578669862c95549b0dfed411a6d9a3}\label{class_matrix_a88578669862c95549b0dfed411a6d9a3} 
+\index{Matrix@{Matrix}!set\_line@{set\_line}}
+\index{set\_line@{set\_line}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{set\_line()}{set\_line()}}
+{\footnotesize\ttfamily void Matrix\+::set\+\_\+line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}}}]{ind,  }\item[{vector$<$ \mbox{\hyperlink{_my_matrix_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$}]{new\+\_\+line }\end{DoxyParamCaption})}
+
+
+
+Modifies the values of a row. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ind} & The index of the row to be modified. \\
+\hline
+{\em new\+\_\+line} & A vector containing the new values. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_matrix_af26674d82c5b294d9f012b51620a4d7f}\label{class_matrix_af26674d82c5b294d9f012b51620a4d7f} 
+\index{Matrix@{Matrix}!set\_column@{set\_column}}
+\index{set\_column@{set\_column}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{set\_column()}{set\_column()}}
+{\footnotesize\ttfamily void Matrix\+::set\+\_\+column (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}}}]{ind,  }\item[{vector$<$ \mbox{\hyperlink{_my_matrix_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$}]{new\+\_\+column }\end{DoxyParamCaption})}
+
+
+
+Modifies the values of a column. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ind} & The index of the column to be modified. \\
+\hline
+{\em new\+\_\+column} & A vector containing the new values. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_matrix_a526625b7a4c00aa76d44da6f20b89e8e}\label{class_matrix_a526625b7a4c00aa76d44da6f20b89e8e} 
+\index{Matrix@{Matrix}!set\_value@{set\_value}}
+\index{set\_value@{set\_value}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{set\_value()}{set\_value()}}
+{\footnotesize\ttfamily void Matrix\+::set\+\_\+value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}}}]{i,  }\item[{\mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}}}]{j,  }\item[{\mbox{\hyperlink{_my_matrix_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}]{new\+\_\+value }\end{DoxyParamCaption})}
+
+
+
+Modifies a value in the matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of the row of the value. \\
+\hline
+{\em j} & The index of the column of the value. \\
+\hline
+{\em new\+\_\+value} & The new value. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_matrix_a4f75e3caf0320e96b466219d6eabd74e}\label{class_matrix_a4f75e3caf0320e96b466219d6eabd74e} 
+\index{Matrix@{Matrix}!set\_Matrix@{set\_Matrix}}
+\index{set\_Matrix@{set\_Matrix}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{set\_Matrix()}{set\_Matrix()}}
+{\footnotesize\ttfamily void Matrix\+::set\+\_\+\+Matrix (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ \mbox{\hyperlink{_my_matrix_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ $>$}]{new\+\_\+matrix }\end{DoxyParamCaption})}
+
+
+
+Allows modification of the entire matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+matrix} & A vector containing the values of the new matrix. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_matrix_a84e79275b8f979b6865796f4d006ed8e}\label{class_matrix_a84e79275b8f979b6865796f4d006ed8e} 
+\index{Matrix@{Matrix}!nbr\_lines@{nbr\_lines}}
+\index{nbr\_lines@{nbr\_lines}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{nbr\_lines}{nbr\_lines}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}} Matrix\+::nbr\+\_\+lines = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_matrix_aec6c431972a0d5bd50978c8ccaf6db34}\label{class_matrix_aec6c431972a0d5bd50978c8ccaf6db34} 
+\index{Matrix@{Matrix}!nbr\_columns@{nbr\_columns}}
+\index{nbr\_columns@{nbr\_columns}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{nbr\_columns}{nbr\_columns}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_my_matrix_8hpp_a649842e78f219114435121a088c1bed2}{ll}} Matrix\+::nbr\+\_\+columns = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_matrix_a84d678e45db2d1008d849683546968dc}\label{class_matrix_a84d678e45db2d1008d849683546968dc} 
+\index{Matrix@{Matrix}!Values@{Values}}
+\index{Values@{Values}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{Values}{Values}}
+{\footnotesize\ttfamily vector$<$vector$<$\mbox{\hyperlink{_my_matrix_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}$>$ $>$ Matrix\+::\+Values\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_my_matrix_8hpp}{My\+Matrix.\+hpp}}\item 
+\mbox{\hyperlink{_my_matrix_8cpp}{My\+Matrix.\+cpp}}\end{DoxyCompactItemize}

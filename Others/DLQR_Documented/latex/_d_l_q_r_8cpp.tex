@@ -1,0 +1,132 @@
+\doxysection{DLQR.\+cpp File Reference}
+\hypertarget{_d_l_q_r_8cpp}{}\label{_d_l_q_r_8cpp}\index{DLQR.cpp@{DLQR.cpp}}
+{\ttfamily \#include $<$bits/stdc++.\+h$>$}\newline
+{\ttfamily \#include \"{}My\+Matrix.\+hpp\"{}}\newline
+{\ttfamily \#include \"{}My\+Matrix.\+cpp\"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_d_l_q_r_8cpp_a11cbb791b9c738c102a2c3cc41db9846}{pb}}(a)~push\+\_\+back(a)
+\item 
+\#define \mbox{\hyperlink{_d_l_q_r_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}(a,  b)~make\+\_\+pair(a,b)
+\item 
+\#define \mbox{\hyperlink{_d_l_q_r_8cpp_a42257a545daf5b7933d6e8f96adc74f2}{F}}~first
+\item 
+\#define \mbox{\hyperlink{_d_l_q_r_8cpp_af933676109efed7ab34cea71d748a517}{S}}~second
+\item 
+\#define \mbox{\hyperlink{_d_l_q_r_8cpp_af40a326b23c68a27cebe60f16634a2cb}{V}}~vector
+\item 
+\#define \mbox{\hyperlink{_d_l_q_r_8cpp_a2c11ce7eb9928967f4863f2ff8e99b58}{sz}}()~size()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef long long \mbox{\hyperlink{_d_l_q_r_8cpp_a649842e78f219114435121a088c1bed2}{ll}}
+\item 
+typedef long double \mbox{\hyperlink{_d_l_q_r_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+pair$<$ vector$<$ \mbox{\hyperlink{class_matrix}{Matrix}} $>$, vector$<$ \mbox{\hyperlink{class_matrix}{Matrix}} $>$ $>$ \mbox{\hyperlink{_d_l_q_r_8cpp_ac868fd1ad89d3f9b60e81e5caf0a9224}{DLQR}} (\mbox{\hyperlink{class_matrix}{Matrix}} A, \mbox{\hyperlink{class_matrix}{Matrix}} B, \mbox{\hyperlink{class_matrix}{Matrix}} Q, \mbox{\hyperlink{class_matrix}{Matrix}} Qf, \mbox{\hyperlink{class_matrix}{Matrix}} R, \mbox{\hyperlink{class_matrix}{Matrix}} X\+\_\+init, \mbox{\hyperlink{_d_l_q_r_8cpp_a649842e78f219114435121a088c1bed2}{ll}} N)
+\begin{DoxyCompactList}\small\item\em This function solves the finite horizon Discrete Linear Quadratic Regulator (DLQR) problem. The underlying equation is $ x_{t+1} = Ax_t + Bu_t $. The goal is to find values of $ u $ that minimize $ \sum_{t=0}^{N-1} (x_t^T Q x_t + u_t^T R u_t) + x_N^T Q_f x_N $, where $ Q = Q^T \geqslant 0 $, $ Q_f \geqslant 0 $, $ R = R^T > 0 $, and $ A $, $ B $, $ Q $, $ R $, $ Q_f $, $ x_0 $, and $ N $ are fixed. ~\newline
+The main source of the algorithm idea\+: \href{https://stanford.edu/class/ee363/lectures/dlqr.pdf}{\texttt{ https\+://stanford.\+edu/class/ee363/lectures/dlqr.\+pdf}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_d_l_q_r_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_d_l_q_r_8cpp_a11cbb791b9c738c102a2c3cc41db9846}\label{_d_l_q_r_8cpp_a11cbb791b9c738c102a2c3cc41db9846} 
+\index{DLQR.cpp@{DLQR.cpp}!pb@{pb}}
+\index{pb@{pb}!DLQR.cpp@{DLQR.cpp}}
+\doxysubsubsection{\texorpdfstring{pb}{pb}}
+{\footnotesize\ttfamily \#define pb(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~push\+\_\+back(a)}
+
+\Hypertarget{_d_l_q_r_8cpp_a8291ecbfbe30404d023453fb198bc06c}\label{_d_l_q_r_8cpp_a8291ecbfbe30404d023453fb198bc06c} 
+\index{DLQR.cpp@{DLQR.cpp}!mk@{mk}}
+\index{mk@{mk}!DLQR.cpp@{DLQR.cpp}}
+\doxysubsubsection{\texorpdfstring{mk}{mk}}
+{\footnotesize\ttfamily \#define mk(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~make\+\_\+pair(a,b)}
+
+\Hypertarget{_d_l_q_r_8cpp_a42257a545daf5b7933d6e8f96adc74f2}\label{_d_l_q_r_8cpp_a42257a545daf5b7933d6e8f96adc74f2} 
+\index{DLQR.cpp@{DLQR.cpp}!F@{F}}
+\index{F@{F}!DLQR.cpp@{DLQR.cpp}}
+\doxysubsubsection{\texorpdfstring{F}{F}}
+{\footnotesize\ttfamily \#define F~first}
+
+\Hypertarget{_d_l_q_r_8cpp_af933676109efed7ab34cea71d748a517}\label{_d_l_q_r_8cpp_af933676109efed7ab34cea71d748a517} 
+\index{DLQR.cpp@{DLQR.cpp}!S@{S}}
+\index{S@{S}!DLQR.cpp@{DLQR.cpp}}
+\doxysubsubsection{\texorpdfstring{S}{S}}
+{\footnotesize\ttfamily \#define S~second}
+
+\Hypertarget{_d_l_q_r_8cpp_af40a326b23c68a27cebe60f16634a2cb}\label{_d_l_q_r_8cpp_af40a326b23c68a27cebe60f16634a2cb} 
+\index{DLQR.cpp@{DLQR.cpp}!V@{V}}
+\index{V@{V}!DLQR.cpp@{DLQR.cpp}}
+\doxysubsubsection{\texorpdfstring{V}{V}}
+{\footnotesize\ttfamily \#define V~vector}
+
+\Hypertarget{_d_l_q_r_8cpp_a2c11ce7eb9928967f4863f2ff8e99b58}\label{_d_l_q_r_8cpp_a2c11ce7eb9928967f4863f2ff8e99b58} 
+\index{DLQR.cpp@{DLQR.cpp}!sz@{sz}}
+\index{sz@{sz}!DLQR.cpp@{DLQR.cpp}}
+\doxysubsubsection{\texorpdfstring{sz}{sz}}
+{\footnotesize\ttfamily \#define sz(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~size()}
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{_d_l_q_r_8cpp_a649842e78f219114435121a088c1bed2}\label{_d_l_q_r_8cpp_a649842e78f219114435121a088c1bed2} 
+\index{DLQR.cpp@{DLQR.cpp}!ll@{ll}}
+\index{ll@{ll}!DLQR.cpp@{DLQR.cpp}}
+\doxysubsubsection{\texorpdfstring{ll}{ll}}
+{\footnotesize\ttfamily typedef long long \mbox{\hyperlink{_d_l_q_r_8cpp_a649842e78f219114435121a088c1bed2}{ll}}}
+
+\Hypertarget{_d_l_q_r_8cpp_a09bfe86a130ac3370740e01ab26b8b48}\label{_d_l_q_r_8cpp_a09bfe86a130ac3370740e01ab26b8b48} 
+\index{DLQR.cpp@{DLQR.cpp}!ld@{ld}}
+\index{ld@{ld}!DLQR.cpp@{DLQR.cpp}}
+\doxysubsubsection{\texorpdfstring{ld}{ld}}
+{\footnotesize\ttfamily typedef long double \mbox{\hyperlink{_d_l_q_r_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_d_l_q_r_8cpp_ac868fd1ad89d3f9b60e81e5caf0a9224}\label{_d_l_q_r_8cpp_ac868fd1ad89d3f9b60e81e5caf0a9224} 
+\index{DLQR.cpp@{DLQR.cpp}!DLQR@{DLQR}}
+\index{DLQR@{DLQR}!DLQR.cpp@{DLQR.cpp}}
+\doxysubsubsection{\texorpdfstring{DLQR()}{DLQR()}}
+{\footnotesize\ttfamily pair$<$ vector$<$ \mbox{\hyperlink{class_matrix}{Matrix}} $>$, vector$<$ \mbox{\hyperlink{class_matrix}{Matrix}} $>$ $>$ DLQR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}}]{A,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}}]{B,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}}]{Q,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}}]{Qf,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}}]{R,  }\item[{\mbox{\hyperlink{class_matrix}{Matrix}}}]{X\+\_\+init,  }\item[{\mbox{\hyperlink{_d_l_q_r_8cpp_a649842e78f219114435121a088c1bed2}{ll}}}]{N }\end{DoxyParamCaption})}
+
+
+
+This function solves the finite horizon Discrete Linear Quadratic Regulator (DLQR) problem. The underlying equation is $ x_{t+1} = Ax_t + Bu_t $. The goal is to find values of $ u $ that minimize $ \sum_{t=0}^{N-1} (x_t^T Q x_t + u_t^T R u_t) + x_N^T Q_f x_N $, where $ Q = Q^T \geqslant 0 $, $ Q_f \geqslant 0 $, $ R = R^T > 0 $, and $ A $, $ B $, $ Q $, $ R $, $ Q_f $, $ x_0 $, and $ N $ are fixed. ~\newline
+The main source of the algorithm idea\+: \href{https://stanford.edu/class/ee363/lectures/dlqr.pdf}{\texttt{ https\+://stanford.\+edu/class/ee363/lectures/dlqr.\+pdf}}. 
+
+\begin{DoxyAttention}{Attention}
+The algorithm has been optimized.
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em A} & As described above. \\
+\hline
+{\em B} & As described above. \\
+\hline
+{\em Q} & As described above. \\
+\hline
+{\em Qf} & As described above. \\
+\hline
+{\em R} & As described above. \\
+\hline
+{\em X\+\_\+init} & As described above. \\
+\hline
+{\em N} & As described above. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pair of vectors containing the sequences $ (x_t)_{0 \leqslant t \leqslant N} $ and $ (u_t)_{0 \leqslant t < N} $. 
+\end{DoxyReturn}
+\Hypertarget{_d_l_q_r_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_d_l_q_r_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{DLQR.cpp@{DLQR.cpp}!main@{main}}
+\index{main@{main}!DLQR.cpp@{DLQR.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+

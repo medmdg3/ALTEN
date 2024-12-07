@@ -1,0 +1,45 @@
+\doxysection{My\+Polynom.\+hpp}
+\hypertarget{_my_polynom_8hpp_source}{}\label{_my_polynom_8hpp_source}\mbox{\hyperlink{_my_polynom_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_my_matrix_8hpp}{MyMatrix.hpp}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{_my_matrix_8cpp}{MyMatrix.cpp}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ pb(a)\ push\_back(a)}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ mk(a,b)\ make\_pair(a,b)}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ F\ first}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ S\ second}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ V\ vector}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ sz()\ size()}}
+\DoxyCodeLine{00011\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{_my_polynom_8hpp_a649842e78f219114435121a088c1bed2}{ll}};}
+\DoxyCodeLine{00012\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{_my_polynom_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}};}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_polynomial}{Polynomial}}\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ vector<ld>\ \mbox{\hyperlink{class_polynomial_ae717b9bb3ddbc07b997d5781224bd949}{coef}};}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_my_polynom_8hpp_a649842e78f219114435121a088c1bed2}{ll}}\ \mbox{\hyperlink{class_polynomial_a39f47ddd7cb46d3c928998997f2d8665}{get\_degree}}();}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_my_polynom_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{class_polynomial_a7c80c1c3e0089d834028db7cabd2c259}{get\_coef}}(\mbox{\hyperlink{_my_polynom_8hpp_a649842e78f219114435121a088c1bed2}{ll}}\ ind);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polynomial_a2373dcce5c06a20d07442baab3b54a80}{set\_coef}}(\mbox{\hyperlink{_my_polynom_8hpp_a649842e78f219114435121a088c1bed2}{ll}}\ ind,\ \mbox{\hyperlink{_my_polynom_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ val);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polynomial_adcf6d2d329e07b0ee1f7c1ee64f88458}{add\_coef}}(\mbox{\hyperlink{_my_polynom_8hpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ val);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_my_polynom_8hpp_a649842e78f219114435121a088c1bed2}{ll}}\ \mbox{\hyperlink{class_polynomial_acc79d0b8acc2516e6c60b2f6bec4ecb0}{del\_coef}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_polynomial_a634dada035e6113957612e9e35f809d3}{set\_Polynomial}}(vector<ld>\ new\_Polynomial);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ vector<ld>\ \mbox{\hyperlink{class_polynomial_aacf4f53b509d6b62ce74e95d56ede135}{get\_Polynomial}}();}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00053\ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ \mbox{\hyperlink{_my_polynom_8hpp_a006f65a1b82dc8913af31623445eeb96}{Polynomial\_value}}(\mbox{\hyperlink{class_polynomial}{Polynomial}}\ A,\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ val);}
+\DoxyCodeLine{00057\ \mbox{\hyperlink{class_polynomial}{Polynomial}}\ \mbox{\hyperlink{_my_polynom_8hpp_a719e2737ecb8577e306a60610e604859}{Polynomial\_Derive}}(\mbox{\hyperlink{class_polynomial}{Polynomial}}\ A);}
+\DoxyCodeLine{00062\ \mbox{\hyperlink{class_polynomial}{Polynomial}}\ \mbox{\hyperlink{_my_polynom_8hpp_a400da0091d418e63a90fc4e91fcf90ad}{Polynomial\_Sum}}(\mbox{\hyperlink{class_polynomial}{Polynomial}}\ A,\mbox{\hyperlink{class_polynomial}{Polynomial}}\ B);}
+\DoxyCodeLine{00068\ \mbox{\hyperlink{class_polynomial}{Polynomial}}\ \mbox{\hyperlink{_my_polynom_8hpp_a17a6128540e5cbdcdfa465ab84e9c944}{Polynomial\_Shift}}(\mbox{\hyperlink{class_polynomial}{Polynomial}}\ A,\mbox{\hyperlink{_best___circle_8cpp_a649842e78f219114435121a088c1bed2}{ll}}\ n,\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ val=0);}
+\DoxyCodeLine{00073\ \mbox{\hyperlink{class_polynomial}{Polynomial}}\ \mbox{\hyperlink{_my_polynom_8hpp_a19eda7a2a0439ad357b08eaf38f139a8}{Polynomial\_Scale}}(\mbox{\hyperlink{class_polynomial}{Polynomial}}\ A,\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ scale);}
+\DoxyCodeLine{00078\ \mbox{\hyperlink{class_polynomial}{Polynomial}}\ \mbox{\hyperlink{_my_polynom_8hpp_a4da4962b61781ff933d7ec353c9e3d81}{Polynomial\_Product}}(\mbox{\hyperlink{class_polynomial}{Polynomial}}\ A,\mbox{\hyperlink{class_polynomial}{Polynomial}}\ B);}
+\DoxyCodeLine{00082\ \mbox{\hyperlink{class_polynomial}{Polynomial}}\ \mbox{\hyperlink{_my_polynom_8hpp_a176ba31b9294adb280aa8ee81d34b1da}{Polynomials\_Product}}(vector<Polynomial>\ A);}
+\DoxyCodeLine{00086\ \mbox{\hyperlink{class_polynomial}{Polynomial}}\ \mbox{\hyperlink{_my_polynom_8hpp_abc1fae917c55e31b98bdc9e8e858df39}{Polynomial\_from\_roots}}(vector<ld>\ roots);}
+\DoxyCodeLine{00091\ \mbox{\hyperlink{class_polynomial}{Polynomial}}\ \mbox{\hyperlink{_my_polynom_8hpp_ab5745f3f0dcbbdbb7cce73ceb039c4b4}{Polynomial\_integral}}(\mbox{\hyperlink{class_polynomial}{Polynomial}}\ A,\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}\ val\_0=0);}
+\DoxyCodeLine{00095\ \mbox{\hyperlink{class_polynomial}{Polynomial}}\ \mbox{\hyperlink{_my_polynom_8hpp_a339bf62f238db958f5ee6dff1e24d037}{Polynomial\_Approximal}}(vector<pair<ld,ld>\ >\ points);}
+
+\end{DoxyCode}

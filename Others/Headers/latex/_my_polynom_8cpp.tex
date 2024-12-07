@@ -1,0 +1,306 @@
+\doxysection{My\+Polynom.\+cpp File Reference}
+\hypertarget{_my_polynom_8cpp}{}\label{_my_polynom_8cpp}\index{MyPolynom.cpp@{MyPolynom.cpp}}
+{\ttfamily \#include \"{}My\+Polynom.\+hpp\"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_my_polynom_8cpp_a11cbb791b9c738c102a2c3cc41db9846}{pb}}(a)~push\+\_\+back(a)
+\item 
+\#define \mbox{\hyperlink{_my_polynom_8cpp_a8291ecbfbe30404d023453fb198bc06c}{mk}}(a,  b)~make\+\_\+pair(a,b)
+\item 
+\#define \mbox{\hyperlink{_my_polynom_8cpp_a42257a545daf5b7933d6e8f96adc74f2}{F}}~first
+\item 
+\#define \mbox{\hyperlink{_my_polynom_8cpp_af933676109efed7ab34cea71d748a517}{S}}~second
+\item 
+\#define \mbox{\hyperlink{_my_polynom_8cpp_af40a326b23c68a27cebe60f16634a2cb}{V}}~vector
+\item 
+\#define \mbox{\hyperlink{_my_polynom_8cpp_a2c11ce7eb9928967f4863f2ff8e99b58}{sz}}()~size()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef long long \mbox{\hyperlink{_my_polynom_8cpp_a649842e78f219114435121a088c1bed2}{ll}}
+\item 
+typedef long double \mbox{\hyperlink{_my_polynom_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} \mbox{\hyperlink{_my_polynom_8cpp_a006f65a1b82dc8913af31623445eeb96}{Polynomial\+\_\+value}} (\mbox{\hyperlink{class_polynomial}{Polynomial}} A, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} val)
+\begin{DoxyCompactList}\small\item\em Computes the value of a \doxylink{class_polynomial}{Polynomial} at a given point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \mbox{\hyperlink{_my_polynom_8cpp_a719e2737ecb8577e306a60610e604859}{Polynomial\+\_\+\+Derive}} (\mbox{\hyperlink{class_polynomial}{Polynomial}} A)
+\begin{DoxyCompactList}\small\item\em Construct the derivative of a polynomial. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \mbox{\hyperlink{_my_polynom_8cpp_a400da0091d418e63a90fc4e91fcf90ad}{Polynomial\+\_\+\+Sum}} (\mbox{\hyperlink{class_polynomial}{Polynomial}} A, \mbox{\hyperlink{class_polynomial}{Polynomial}} B)
+\begin{DoxyCompactList}\small\item\em Construct a polynomial who is equal to the sum of two other given polynomials. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \mbox{\hyperlink{_my_polynom_8cpp_a3fb04373ecb720984a0bca04a365de54}{Polynomial\+\_\+\+Shift}} (\mbox{\hyperlink{class_polynomial}{Polynomial}} A, \mbox{\hyperlink{_best___circle_8cpp_a649842e78f219114435121a088c1bed2}{ll}} n, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} val)
+\begin{DoxyCompactList}\small\item\em Construct a polynomial shifted to the right or to the left by a certain value $|n|$, ~\newline
+ it erases the first $|n|$ elements if it is being shifted to the right, or multiplying the polynom by $X^{|n|}$ if the shift is to the left, while filling the new coeficiant with a given value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \mbox{\hyperlink{_my_polynom_8cpp_a19eda7a2a0439ad357b08eaf38f139a8}{Polynomial\+\_\+\+Scale}} (\mbox{\hyperlink{class_polynomial}{Polynomial}} A, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} scale)
+\begin{DoxyCompactList}\small\item\em Construct polynomial sclaed with a given scale. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \mbox{\hyperlink{_my_polynom_8cpp_a4da4962b61781ff933d7ec353c9e3d81}{Polynomial\+\_\+\+Product}} (\mbox{\hyperlink{class_polynomial}{Polynomial}} A, \mbox{\hyperlink{class_polynomial}{Polynomial}} B)
+\begin{DoxyCompactList}\small\item\em Construct a polynomial who is equal to the product of two other given polynomials. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \mbox{\hyperlink{_my_polynom_8cpp_a176ba31b9294adb280aa8ee81d34b1da}{Polynomials\+\_\+\+Product}} (vector$<$ \mbox{\hyperlink{class_polynomial}{Polynomial}} $>$ A)
+\begin{DoxyCompactList}\small\item\em Construct a polynomial who is equal to the product of a many polynomials. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \mbox{\hyperlink{_my_polynom_8cpp_abc1fae917c55e31b98bdc9e8e858df39}{Polynomial\+\_\+from\+\_\+roots}} (vector$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ roots)
+\begin{DoxyCompactList}\small\item\em Construct a monic polynomial from it\textquotesingle{}s roots. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \mbox{\hyperlink{_my_polynom_8cpp_a5e43155b0493eee5e503ba3285d7d3e3}{Polynomial\+\_\+integral}} (\mbox{\hyperlink{class_polynomial}{Polynomial}} A, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} val\+\_\+0)
+\begin{DoxyCompactList}\small\item\em Contruct an integral of a given polynomial. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_polynomial}{Polynomial}} \mbox{\hyperlink{_my_polynom_8cpp_a339bf62f238db958f5ee6dff1e24d037}{Polynomial\+\_\+\+Approximal}} (vector$<$ pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ $>$ points)
+\begin{DoxyCompactList}\small\item\em Construct the polynomial of the smallest degree such that it passes through some given points (if it exists) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_my_polynom_8cpp_a11cbb791b9c738c102a2c3cc41db9846}\label{_my_polynom_8cpp_a11cbb791b9c738c102a2c3cc41db9846} 
+\index{MyPolynom.cpp@{MyPolynom.cpp}!pb@{pb}}
+\index{pb@{pb}!MyPolynom.cpp@{MyPolynom.cpp}}
+\doxysubsubsection{\texorpdfstring{pb}{pb}}
+{\footnotesize\ttfamily \#define pb(\begin{DoxyParamCaption}\item[{}]{a }\end{DoxyParamCaption})~push\+\_\+back(a)}
+
+\Hypertarget{_my_polynom_8cpp_a8291ecbfbe30404d023453fb198bc06c}\label{_my_polynom_8cpp_a8291ecbfbe30404d023453fb198bc06c} 
+\index{MyPolynom.cpp@{MyPolynom.cpp}!mk@{mk}}
+\index{mk@{mk}!MyPolynom.cpp@{MyPolynom.cpp}}
+\doxysubsubsection{\texorpdfstring{mk}{mk}}
+{\footnotesize\ttfamily \#define mk(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~make\+\_\+pair(a,b)}
+
+\Hypertarget{_my_polynom_8cpp_a42257a545daf5b7933d6e8f96adc74f2}\label{_my_polynom_8cpp_a42257a545daf5b7933d6e8f96adc74f2} 
+\index{MyPolynom.cpp@{MyPolynom.cpp}!F@{F}}
+\index{F@{F}!MyPolynom.cpp@{MyPolynom.cpp}}
+\doxysubsubsection{\texorpdfstring{F}{F}}
+{\footnotesize\ttfamily \#define F~first}
+
+\Hypertarget{_my_polynom_8cpp_af933676109efed7ab34cea71d748a517}\label{_my_polynom_8cpp_af933676109efed7ab34cea71d748a517} 
+\index{MyPolynom.cpp@{MyPolynom.cpp}!S@{S}}
+\index{S@{S}!MyPolynom.cpp@{MyPolynom.cpp}}
+\doxysubsubsection{\texorpdfstring{S}{S}}
+{\footnotesize\ttfamily \#define S~second}
+
+\Hypertarget{_my_polynom_8cpp_af40a326b23c68a27cebe60f16634a2cb}\label{_my_polynom_8cpp_af40a326b23c68a27cebe60f16634a2cb} 
+\index{MyPolynom.cpp@{MyPolynom.cpp}!V@{V}}
+\index{V@{V}!MyPolynom.cpp@{MyPolynom.cpp}}
+\doxysubsubsection{\texorpdfstring{V}{V}}
+{\footnotesize\ttfamily \#define V~vector}
+
+\Hypertarget{_my_polynom_8cpp_a2c11ce7eb9928967f4863f2ff8e99b58}\label{_my_polynom_8cpp_a2c11ce7eb9928967f4863f2ff8e99b58} 
+\index{MyPolynom.cpp@{MyPolynom.cpp}!sz@{sz}}
+\index{sz@{sz}!MyPolynom.cpp@{MyPolynom.cpp}}
+\doxysubsubsection{\texorpdfstring{sz}{sz}}
+{\footnotesize\ttfamily \#define sz(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~size()}
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{_my_polynom_8cpp_a649842e78f219114435121a088c1bed2}\label{_my_polynom_8cpp_a649842e78f219114435121a088c1bed2} 
+\index{MyPolynom.cpp@{MyPolynom.cpp}!ll@{ll}}
+\index{ll@{ll}!MyPolynom.cpp@{MyPolynom.cpp}}
+\doxysubsubsection{\texorpdfstring{ll}{ll}}
+{\footnotesize\ttfamily typedef long long \mbox{\hyperlink{_best___circle_8cpp_a649842e78f219114435121a088c1bed2}{ll}}}
+
+\Hypertarget{_my_polynom_8cpp_a09bfe86a130ac3370740e01ab26b8b48}\label{_my_polynom_8cpp_a09bfe86a130ac3370740e01ab26b8b48} 
+\index{MyPolynom.cpp@{MyPolynom.cpp}!ld@{ld}}
+\index{ld@{ld}!MyPolynom.cpp@{MyPolynom.cpp}}
+\doxysubsubsection{\texorpdfstring{ld}{ld}}
+{\footnotesize\ttfamily typedef long double \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_my_polynom_8cpp_a006f65a1b82dc8913af31623445eeb96}\label{_my_polynom_8cpp_a006f65a1b82dc8913af31623445eeb96} 
+\index{MyPolynom.cpp@{MyPolynom.cpp}!Polynomial\_value@{Polynomial\_value}}
+\index{Polynomial\_value@{Polynomial\_value}!MyPolynom.cpp@{MyPolynom.cpp}}
+\doxysubsubsection{\texorpdfstring{Polynomial\_value()}{Polynomial\_value()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} Polynomial\+\_\+value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}}}]{A,  }\item[{\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}]{val }\end{DoxyParamCaption})}
+
+
+
+Computes the value of a \doxylink{class_polynomial}{Polynomial} at a given point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & The corresponding polynomial. \\
+\hline
+{\em val} & The given point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding value $A(val)$. 
+\end{DoxyReturn}
+\Hypertarget{_my_polynom_8cpp_a719e2737ecb8577e306a60610e604859}\label{_my_polynom_8cpp_a719e2737ecb8577e306a60610e604859} 
+\index{MyPolynom.cpp@{MyPolynom.cpp}!Polynomial\_Derive@{Polynomial\_Derive}}
+\index{Polynomial\_Derive@{Polynomial\_Derive}!MyPolynom.cpp@{MyPolynom.cpp}}
+\doxysubsubsection{\texorpdfstring{Polynomial\_Derive()}{Polynomial\_Derive()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} Polynomial\+\_\+\+Derive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}}}]{A }\end{DoxyParamCaption})}
+
+
+
+Construct the derivative of a polynomial. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & The polynomial \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The derivative 
+\end{DoxyReturn}
+\Hypertarget{_my_polynom_8cpp_a400da0091d418e63a90fc4e91fcf90ad}\label{_my_polynom_8cpp_a400da0091d418e63a90fc4e91fcf90ad} 
+\index{MyPolynom.cpp@{MyPolynom.cpp}!Polynomial\_Sum@{Polynomial\_Sum}}
+\index{Polynomial\_Sum@{Polynomial\_Sum}!MyPolynom.cpp@{MyPolynom.cpp}}
+\doxysubsubsection{\texorpdfstring{Polynomial\_Sum()}{Polynomial\_Sum()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} Polynomial\+\_\+\+Sum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}}}]{A,  }\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}}}]{B }\end{DoxyParamCaption})}
+
+
+
+Construct a polynomial who is equal to the sum of two other given polynomials. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & The first given polynomial \\
+\hline
+{\em B} & The second given polynomial \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sum of the two given polynomials ~\newline
+ 
+\end{DoxyReturn}
+\Hypertarget{_my_polynom_8cpp_a3fb04373ecb720984a0bca04a365de54}\label{_my_polynom_8cpp_a3fb04373ecb720984a0bca04a365de54} 
+\index{MyPolynom.cpp@{MyPolynom.cpp}!Polynomial\_Shift@{Polynomial\_Shift}}
+\index{Polynomial\_Shift@{Polynomial\_Shift}!MyPolynom.cpp@{MyPolynom.cpp}}
+\doxysubsubsection{\texorpdfstring{Polynomial\_Shift()}{Polynomial\_Shift()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} Polynomial\+\_\+\+Shift (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}}}]{A,  }\item[{\mbox{\hyperlink{_best___circle_8cpp_a649842e78f219114435121a088c1bed2}{ll}}}]{n,  }\item[{\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}]{val = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Construct a polynomial shifted to the right or to the left by a certain value $|n|$, ~\newline
+ it erases the first $|n|$ elements if it is being shifted to the right, or multiplying the polynom by $X^{|n|}$ if the shift is to the left, while filling the new coeficiant with a given value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & The polynom containing the original values \\
+\hline
+{\em n} & Defines how the polynomial will be shifted\+: ~\newline
+ It will be shifted to the left by $|n|$ if $n>=0$ ~\newline
+ It will be shifted to the right by $|n|$ if $n<0$ \\
+\hline
+{\em val} & The given value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The constructed polynomial 
+\end{DoxyReturn}
+\Hypertarget{_my_polynom_8cpp_a19eda7a2a0439ad357b08eaf38f139a8}\label{_my_polynom_8cpp_a19eda7a2a0439ad357b08eaf38f139a8} 
+\index{MyPolynom.cpp@{MyPolynom.cpp}!Polynomial\_Scale@{Polynomial\_Scale}}
+\index{Polynomial\_Scale@{Polynomial\_Scale}!MyPolynom.cpp@{MyPolynom.cpp}}
+\doxysubsubsection{\texorpdfstring{Polynomial\_Scale()}{Polynomial\_Scale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} Polynomial\+\_\+\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}}}]{A,  }\item[{\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}]{scale }\end{DoxyParamCaption})}
+
+
+
+Construct polynomial sclaed with a given scale. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & The polynomial cointaining the original values \\
+\hline
+{\em scale} & The given sclae \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The constructed polynomial 
+\end{DoxyReturn}
+\Hypertarget{_my_polynom_8cpp_a4da4962b61781ff933d7ec353c9e3d81}\label{_my_polynom_8cpp_a4da4962b61781ff933d7ec353c9e3d81} 
+\index{MyPolynom.cpp@{MyPolynom.cpp}!Polynomial\_Product@{Polynomial\_Product}}
+\index{Polynomial\_Product@{Polynomial\_Product}!MyPolynom.cpp@{MyPolynom.cpp}}
+\doxysubsubsection{\texorpdfstring{Polynomial\_Product()}{Polynomial\_Product()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} Polynomial\+\_\+\+Product (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}}}]{A,  }\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}}}]{B }\end{DoxyParamCaption})}
+
+
+
+Construct a polynomial who is equal to the product of two other given polynomials. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & The first given polynomial \\
+\hline
+{\em B} & The second given polynomial \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The product of the two given polynomials ~\newline
+ 
+\end{DoxyReturn}
+\Hypertarget{_my_polynom_8cpp_a176ba31b9294adb280aa8ee81d34b1da}\label{_my_polynom_8cpp_a176ba31b9294adb280aa8ee81d34b1da} 
+\index{MyPolynom.cpp@{MyPolynom.cpp}!Polynomials\_Product@{Polynomials\_Product}}
+\index{Polynomials\_Product@{Polynomials\_Product}!MyPolynom.cpp@{MyPolynom.cpp}}
+\doxysubsubsection{\texorpdfstring{Polynomials\_Product()}{Polynomials\_Product()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} Polynomials\+\_\+\+Product (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_polynomial}{Polynomial}} $>$}]{A }\end{DoxyParamCaption})}
+
+
+
+Construct a polynomial who is equal to the product of a many polynomials. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & A vector containing the polynomials to be multiplied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The product of the given polynomials ~\newline
+ 
+\end{DoxyReturn}
+\Hypertarget{_my_polynom_8cpp_abc1fae917c55e31b98bdc9e8e858df39}\label{_my_polynom_8cpp_abc1fae917c55e31b98bdc9e8e858df39} 
+\index{MyPolynom.cpp@{MyPolynom.cpp}!Polynomial\_from\_roots@{Polynomial\_from\_roots}}
+\index{Polynomial\_from\_roots@{Polynomial\_from\_roots}!MyPolynom.cpp@{MyPolynom.cpp}}
+\doxysubsubsection{\texorpdfstring{Polynomial\_from\_roots()}{Polynomial\_from\_roots()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} Polynomial\+\_\+from\+\_\+roots (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$}]{roots }\end{DoxyParamCaption})}
+
+
+
+Construct a monic polynomial from it\textquotesingle{}s roots. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em roots} & A vector containing all the roots, each one repeated according to it\textquotesingle{}s degree \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding polynomial 
+\end{DoxyReturn}
+\Hypertarget{_my_polynom_8cpp_a5e43155b0493eee5e503ba3285d7d3e3}\label{_my_polynom_8cpp_a5e43155b0493eee5e503ba3285d7d3e3} 
+\index{MyPolynom.cpp@{MyPolynom.cpp}!Polynomial\_integral@{Polynomial\_integral}}
+\index{Polynomial\_integral@{Polynomial\_integral}!MyPolynom.cpp@{MyPolynom.cpp}}
+\doxysubsubsection{\texorpdfstring{Polynomial\_integral()}{Polynomial\_integral()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} Polynomial\+\_\+integral (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_polynomial}{Polynomial}}}]{A,  }\item[{\mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}}]{val\+\_\+0 = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Contruct an integral of a given polynomial. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & the given polynomial \\
+\hline
+{\em val\+\_\+0} & The coef corresponding to $X^0$ in the new polynomial \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The constructed polynomial 
+\end{DoxyReturn}
+\Hypertarget{_my_polynom_8cpp_a339bf62f238db958f5ee6dff1e24d037}\label{_my_polynom_8cpp_a339bf62f238db958f5ee6dff1e24d037} 
+\index{MyPolynom.cpp@{MyPolynom.cpp}!Polynomial\_Approximal@{Polynomial\_Approximal}}
+\index{Polynomial\_Approximal@{Polynomial\_Approximal}!MyPolynom.cpp@{MyPolynom.cpp}}
+\doxysubsubsection{\texorpdfstring{Polynomial\_Approximal()}{Polynomial\_Approximal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_polynomial}{Polynomial}} Polynomial\+\_\+\+Approximal (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}}, \mbox{\hyperlink{_best___circle_8cpp_a09bfe86a130ac3370740e01ab26b8b48}{ld}} $>$ $>$}]{points }\end{DoxyParamCaption})}
+
+
+
+Construct the polynomial of the smallest degree such that it passes through some given points (if it exists) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & A vector of pairs, where each pair contains the coordinates of a given point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The constructed polynomial 
+\end{DoxyReturn}
